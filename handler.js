@@ -106,16 +106,17 @@ module.exports = {
             if (!user.registered) {
                 if (!('name' in user)) user.name = this.getName(m.sender)
                 if (!isNumber(user.age)) user.age = -1
+                if (!isNumber(user.serial)) user.serial
                 if (!isNumber(user.regTime)) user.regTime = -1
             }
             if (!('autolevelup' in user)) user.autolevelup = true
-            if (!('lastIstugfar' in user)) user.lastIstigfar = true
+            if (!('lastIstigfar' in user)) user.lastIstigfar = true
         } else global.db.data.users[m.sender] = {
             healt: 100,
             level: 0,
             title: '',
             exp: 0,
-            limit: 10,
+            limit: 5000,
             lastclaim: 0,
             money: 0,
             diamond: 0,
@@ -180,6 +181,7 @@ module.exports = {
             registered: false,
             name: this.getName(m.sender),
             age: -1,
+            serial: serial,
             regTime: -1,
             autolevelup: true,
             lastIstigfar: 0,
@@ -488,8 +490,8 @@ module.exports = {
       } catch (e) {
         console.log(m, m.quoted, e)
       }
-    //  if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
-    this.chatRead(m.chat).catch(() => { })
+      if (opts['autoread']) await this.chatRead(m.chat).catch(() => { })
+    //this.chatRead(m.chat).catch(() => { })
     }
   },
   async participantsUpdate({ jid, participants, action }) {
@@ -567,16 +569,16 @@ Untuk mematikan fitur ini, ketik
 global.dfail = (type, m, conn) => {
 	let name = conn.getName(m.sender)
   let msg = {
-    rowner: 'Perintah ini hanya dapat digunakan oleh _*OWWNER!1!1!*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner Bot*_!',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+    rowner: `❌Perintah ditolak❌\n\nSilahkan hubungi @${global.kontak[0].split`@`[0]}`,
+    owner: `❌⚠️Perintah ditolak⚠️❌\n\nSilahkan hubungi @${global.kontak[0].split`@`[0]}`,
+    mods: `❌Perintah ditolak❌\n\nSilahkan hubungi @${global.kontak[0].split`@`[0]}`,
+    premium: '❌Perintah Ini khusus pengguna _*Premium*_ !',
     group: 'Perintah ini hanya dapat digunakan di grup!',
-    private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
+    private: '❌Perintah ditolak❌\n\nGunakan Perintah ini di Chat Pribadi bot',
     admin: 'Perintah ini hanya untuk *Admin* grup!',
-    nsfw: 'Perintah ini hanya bisa diaktifkan oleh owner',
-    botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar ${name}.16*`
+    nsfw: `Perintah ini hanya bisa diaktifkan oleh @${global.kontak[0].split`@`[0]}`,
+    botAdmin: 'Jadikan Bot sebagai admin untuk menggunakan perintah ini\n\nDenger ya dekkk!!!\nApakah orang yang tidak menjadi admin bisa menambahkan member???!!!!!',
+    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar nama.16*`
   }[type]
   if (msg) return m.reply(msg)
 }

@@ -11,10 +11,14 @@
 // thank you to ALL Bot creator
 // and thanks you to who support my Bot
 
-global.linkGC = ['https://chat.whatsapp.com/EVCGfzxLWfp81n0WhmVklH', 'https://chat.whatsapp.com/FnNAbem8o6r4pgLhSdO8Q9', 'https://chat.whatsapp.com/HBhy7rVae3o0PkIfkhvs2N'] // ganti jadi group lu
-global.owner = ['6282297563380', '6282268022349', '18084682564'] // Put your number here
-global.mods = ['6289669349047', '6288261394557'] // Want some help?
-global.prems = ['6285157336614','6285826114932','6281804722199','6288261394557','6283162053369','6281326473951'] // Premium user has unlimited limit
+gc1 = 'https://chat.whatsapp.com/FJkbQjpewltErmQRwzC9rj'
+gc2 = ''
+gc3 = ''
+global.linkGC = ['https://chat.whats', 'https://chat.whatsap'] // ganti jadi group lu
+global.owner = ['6289677763976'] // Put your number here //owner eval
+global.kontak = ['6289677763976','0'] //Ketika ada yang ngetik #owner
+global.mods = ['0'] // Want some help?
+global.prems = ['6289677763976'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -29,19 +33,36 @@ global.APIs = { // API Prefix
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey' (apikey kalian)
   'https://api.xteam.xyz': 'Dawnfrostkey',
-  'https://api.lolhuman.xyz': 'Dawnfrostkey',
+  'https://api.lolhuman.xyz': 'RFK-Rey',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
-// Sticker WM
-global.packname = 'I hope you\'re fine' // ganti aja
-global.author = 'MikeBot' // ganti aja
+lolkey = 'RFK-Rey'
+zekskey = 'apivinz'
+xteamkey = 'Dawnfrostkey'
+//xteam        MIMINETBOT
+namaig = ''
+namagithub = ''
+kasihcaption = '.'
+//kasihcaption = `Nih Kak\nJangan lupa follow\n${namaig}\n&\n${namagithub}`
 
-// silakan di ganti klo mau
-global.wait = '_*tunggu..*_'
+// Sticker WM
+global.packname = '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧' // ganti aja
+global.author = '' // ganti aja
+
+//yyy
+bc = 'Y' //RFK Broadcast
+footer = '\nZazizuzezo\.\n.\n.\n.'
+namabot = 'Zux Bot'
+namalu = 'Alfarizi'
+
+
+// 
+wait = '_*Tunggu Sebentar...*_'
+global.wait = '_*Tunggu Sebentar...*_'
 global.rpg = 'Fitur Rpg Dimatikan\nKetik *!enable* *rpg* untuk menggunakan fitur ini!\nKalo Mau main Disini aja\nhttps://chat.whatsapp.com/FnNAbem8o6r4pgLhSdO8Q9'
 global.nsfw = 'Fitur NSFW Dimatikan\nKetik *!enable* *nsfw* untuk menggunakan fitur ini!\n“Katakanlah kepada orang laki-laki yang beriman: Hendaklah mereka menahan pandanganya, dan memelihara kemaluannya; … Katakanlah kepada wanita yang beriman: Hendaklah mereka menahan pandangannya, dan kemaluannya, dan janganlah mereka Menampakkan perhiasannya, kecuali yang (biasa) nampak dari padany,” \n(TQS. Al-Nur [24]: 30-31).'
 global.eror = '_*Server Error*_'
