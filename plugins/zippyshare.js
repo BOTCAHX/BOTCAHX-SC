@@ -8,7 +8,7 @@ let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
   buffer = await getBuffer(apis.data.result.download_url)
   let { ext, mime } = await require('file-type').fromBuffer(buffer)
   m.reply('Sabar Uhm, Lagi Upload...')
-  conn.sendMessage(m.chat, buffer, 'documentMessage', { mimetype: mime, filename: apis.data.result.name_file, quoted:m })
+  await conn.sendMessage(m.chat, buffer, 'documentMessage', { mimetype: mime, filename: apis.data.result.name_file, quoted:m })
   } catch {
   throw 'Error Bang!'
   }  

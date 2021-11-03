@@ -1,9 +1,10 @@
-let handler = async (m, { conn, text }) => {
-  if (!text) throw 'No Text'
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  if (!text) throw `Teks nya mana kak?\nContoh :\n${usedPrefix+command} Hai | ${namalu}`
+  let [t1, t2] = text.split`|`
   conn.sendFile(m.chat, global.API('https://some-random-api.ml', '/canvas/youtube-comment', {
     avatar: await conn.getProfilePicture(m.sender).catch(_ => ''),
-    comment: text,
-    username: conn.getName(m.sender)
+    comment: t1,
+    username: t2
   }), 'yt-comment.png', 'Here is your comment', m)
 }
 

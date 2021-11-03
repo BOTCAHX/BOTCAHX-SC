@@ -11,7 +11,8 @@ let handler = async (m, { conn, args, isPrems, isOwner }) => {
 *Title:* ${title}
 *Filesize:* ${filesizeF}
 *${isLimit ? 'Pakai ': ''}Link:* ${dl_link}
-`.trim(), m)
+`, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
   let _thumb = {}
   try { _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
   catch (e) { }

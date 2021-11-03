@@ -2,19 +2,25 @@ let limit = 30
 const { servers, yta } = require('../lib/y2mate')
 let handler = async (m, { conn, args, isPrems, isOwner }) => {
   if (!args || !args[0]) throw 'Uhm... urlnya mana?'
+  m.reply(wait)
   let chat = global.db.data.chats[m.chat]
   let server = (args[1] || servers[0]).toLowerCase()
   let { dl_link, thumb, title, filesize, filesizeF} = await yta(args[0], servers.includes(server) ? server : servers[0])
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
-  conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
+  await conn.sendFile(m.chat, thumb, 'thumbnail.jpg', `
 *Title:* ${title}
 *Filesize:* ${filesizeF}
 *${isLimit ? 'Pakai ': ''}Link:* ${dl_link}
-`.trim(), m)
-  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp3', `
+`, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
+  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.opus', `
+//conn.sendFile(m.chat, dl_link, title + '.mp3', null, m, true, { contextInfo: { forwardingScore: 999, isForwarded: true }}
+//conn.sendFile(m.chat, dl_link, title + '.mp3', null, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }}
+
 *Title:* ${title}
 *Filesize:* ${filesizeF}
-`.trim(), m, null, {
+`.trim(), m, null, 
+{
   asDocument: chat.useDocument
 })
 }
