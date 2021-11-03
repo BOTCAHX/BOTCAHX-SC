@@ -15,7 +15,7 @@ function kyun(seconds){
   return `${pad(hours)}Jam ${pad(minutes)}Menit ${pad(seconds)}Detik`
 }
 					runtime = process.uptime()
-					teks = `${kyun(runtime)}`
+					teks = `${global.packname}\n\n${kyun(runtime)}`
 					var itsme = `0@s.whatsapp.net`
 					var split = `teks`
 					const rtimebro = {

@@ -3,6 +3,7 @@ const { sticker } = require('../lib/sticker')
 const { MessageType } = require('@adiwajshing/baileys')
 
 let handler = async(m, { conn }) => {
+m.reply(wait)
   let res = await fetch(global.API('https://some-random-api.ml', '/img/pikachu'))
   let json = await res.json()
   let stiker = await sticker(null, json.link, global.packname, global.author)

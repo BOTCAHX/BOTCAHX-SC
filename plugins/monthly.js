@@ -12,7 +12,7 @@ let handler = async (m, { conn }) => {
         user.lastmonthly = new Date * 1
     } else {
         let buttons = `silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`.trim()
-        conn.sendButton(m.chat, buttons, '© mikebot', 'Daily', '#daily')
+        conn.sendButton(m.chat, buttons, footer, 'Daily', '#daily')
     }
 }
 handler.help = ['monthly']
@@ -49,7 +49,7 @@ function button(teks, user) {
     
     const buttonMessage = {
         contentText: teks,
-        footerText: '©games-wabot',
+        footerText: footer,
         buttons: buttons,
         headerType: 1
     }

@@ -17,7 +17,8 @@ let handler = async (m, { conn, isOwner, text, isAdmin }) => {
   try {
     if (who.endsWith('g.us')) global.db.data.chats[who].isBanned = false
     else global.db.data.users[who].banned = false
-    m.reply(`${conn.user.name} aktif dichat ${conn.getName(who) == undefined ? 'ini' : conn.getName(who)}.`)
+    //m.reply(`${conn.user.name} aktif dichat ${conn.getName(who) == undefined ? 'ini' : conn.getName(who)}.`)
+    m.reply(`${namabot} sekarang aktif dichat @${who.split`@`[0]}`) //== undefined ? 'ini' : (y.subject)`)
   } catch (e) {
     throw `nomor tidak ada didatabase!`
   }

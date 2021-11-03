@@ -35,7 +35,7 @@ try {
 
 handler.help = ['stickmaker (caption|reply media)']
 handler.tags = ['sticker']
-handler.command = /^(stickmaker)$/i
+handler.command = /^(stickmaker|stikmaker)$/i
 handler.limit = true
 handler.group = false
 handler.register = true

@@ -10,6 +10,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!/image\/(jpe?g|png)/.test(mime)) throw `_*Mime ${mime} tidak didukung!*_`
     let img = await q.download()
     let url = await uploadImage(img)
+    m.reply(wait)
     meme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas ? atas : '')}/${encodeURIComponent(bawah ? bawah : '')}.png?background=${url}`
     stiker = await sticker(false, meme, global.packname, global.author)
     if (stiker) await conn.sendMessage(m.chat, stiker, MessageType.sticker, {

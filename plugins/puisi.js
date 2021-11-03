@@ -1,5 +1,7 @@
 let handler  = async (m, { conn }) => {
-  conn.reply(m.chat,`“${pickRandom(global.puisi)}”`, m)
+//  conn.reply(m.chat,`“${pickRandom(global.puisi)}”`, m)
+ await conn.sendButton(m.chat, `“${pickRandom(global.puisi)}”`, footer, 'Puisi', '#puisi', m, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
 }
 handler.help = ['puisi','syair']
 handler.tags = ['quotes']

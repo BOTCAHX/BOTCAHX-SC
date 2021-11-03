@@ -10,7 +10,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         let json = JSON.parse(pin)
         if (!json.status) throw `Tidak dapat diunduh`
         await m.reply(global.wait)
-        await conn.sendFile(m.chat, json.data.url, '', `© stikerin`, m)
+        await conn.sendFile(m.chat, json.data.url, '', kasihcaption, m) //, false,{ contextInfo: { forwardingScore: 999, isForwarded: true }})
+
     })
 
 }

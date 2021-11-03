@@ -8,7 +8,7 @@ let handler = async(m, { conn, text }) => {
             let hasil = Buffer.from(ress, 'base64')
             let caption = `:v`
 
-   conn.sendFile(m.chat, hasil, 'shitpost.mp4', caption, m)
+   conn.sendFile(m.chat, hasil, 'shitpost.mp4', kasihcaption, m)
     })
 }
 handler.help = ['shitpost']

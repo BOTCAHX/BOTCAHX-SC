@@ -13,17 +13,21 @@ const defaultMenu = {
 ┃
 ┃⬡ Tersisa *%limit Limit*
 ┃⬡ Role *%role*
-┃⬡ Level *%level (%exp / %maxexp)* [%xp4levelup]
+┃⬡ Level *%level (%exp / %maxexp)* 
+┃⬡ [%xp4levelup]
 ┃⬡ %totalexp XP secara Total
 ┃ 
-┃⬡ Tanggal: *%week %weton, %date*
-┃⬡ Tanggal Islam: *%dateIslamic*
+┃⬡ Hari : *%week %weton* 
+┃⬡ Tanggal : *%date*
+┃⬡ Tanggal Islam : 
+┃⬡ *%dateIslamic*
 ┃⬡ Waktu: *%time*
 ┃
 ┃⬡ Uptime: *%uptime (%muptime)*
 ┃⬡ Database: %rtotalreg dari %totalreg
 ┃⬡ Github:
-┃⬡ %github
+┃⬡ Github.com/RTeam1
+┃
 ┗━━━━━━⬣`.trimStart(),
   header: '┏━━〔 %category 〕━⬣',
   body: '┃⬡%cmd %islimit %isPremium',
@@ -170,7 +174,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let { exp, limit, level, role, registered } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
-    let name = registered ? global.db.data.users[m.sender].name : conn.getName(m.sender)
+    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+    let names = m.fromMe ? conn.user : conn.contacts[who]
+    let pushname = `${names.vnmae || names.notify || names.names || ('+' + names.jid.split`@`[0])}`
+    let pushn = 'Daftar Dulu ya kak supaya namanya muncul disini'
+    let name = registered ? global.db.data.users[m.sender].name : pushn
     let d = new Date(new Date + 3600000)
     let locale = 'id'
     // d.getTimeZoneOffset()
@@ -230,6 +238,17 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬡ *${conn.blocklist.length}* Terblock
 ┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 ┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┃
+┃⬡ Group Official 1 :
+┃    ${gc1}
+┃
+┃⬡ Group Official 2 :
+┃    ${gc2}
+┃
+┃⬡ Group Official 3 :
+┃    ${gc3}
+┃
+┃
 ┗━━━━━━━━⬣`.trim(),
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
@@ -440,7 +459,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
+    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
     // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
     // await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
   } catch (e) {

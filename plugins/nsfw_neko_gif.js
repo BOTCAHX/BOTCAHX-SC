@@ -8,8 +8,9 @@ const neko = new gs()
 
 let handler  = async (m, { conn, text }) => {
 	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
+	m.reply(wait)
   pp = (await neko.nsfw.nekoGif()).url
-                     await sticker(false, pp, 'NSFW Neko', author).then(gege => {
+                     await sticker(false, pp, global.packname, author).then(gege => {
                      conn.sendMessage(m.chat, gege, 'stickerMessage', { quoted: m })
                      })
   //if (!text) throw 'Uhm...Teksnya?'

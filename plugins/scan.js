@@ -2,7 +2,7 @@
 // https://github.com/TOXIC-DEVIL
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
-    if (!args || !args[0] || args.length === 0) throw `uhm.. nomornya mana?\n\ncontoh:\n${usedPrefix + command} 6285157336614`
+    if (!args || !args[0] || args.length === 0) throw `uhm.. nomornya mana?\n\ncontoh:\n${usedPrefix + command} ${global.kontak[0]}`
     if (args[0].startsWith('0')) throw 'Gunakan kode Negara!'
     let user = await conn.isOnWhatsApp(args[0])
     let exists = user && user.exists ? true : false

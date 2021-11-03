@@ -96,7 +96,8 @@ setTimeout(() => {
                      setTimeout(() => {
                      m.reply('_Sedang Memancing..._')
                      }, 0) 
-        } else conn.sendButton(m.chat, `*Sepertinya Anda Sudah Kecapekan*\n*Silahkan Istirahat Sejenak Sekitar ${timer}*\n*Untuk Bisa Melanjutkan Memancing Lagi*\n`, '© mikebot', 'KOLAM', '#kolam', m )
+        } else conn.sendButton(m.chat, `*Sepertinya Anda Sudah Kecapekan*\n*Silahkan Istirahat Sejenak Sekitar ${timer}*\n*Untuk Bisa Melanjutkan Memancing Lagi*\n`, footer, 'KOLAM', '#kolam', m, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
      } else conn.reply(m.chat, 'Upgrade fishing rod dulu dah mau patah' ,m)
    } else conn.reply(m.chat, 'beli fishing rod dulu di #shop' ,m)
 }

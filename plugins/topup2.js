@@ -5,13 +5,13 @@ let handler  = async (m, { conn, command, args, text, usedPrefix }) => {
         if (!text) throw `Perintah Salah\nContoh :\n${usedPrefix + command} @tag_member spasi jumlah\n\nContoh :\n${usedPrefix + command} @tag_member 1000`
         let name = `@${who.split`@`[0]}`
         let users = global.db.data.users
-	users[who].money += count * 1
-                        conn.reply(m.chat, `Berhasil mentopup ${name} money sebesar ${count}`.trim(), m)
+	users[who].limit += count * 1
+                        conn.reply(m.chat, `Berhasil mentopup ${name} Limit sebesar ${count}`.trim(), m)
                         }
                         
 handler.help = ['topup <Args>']
 handler.tags = ['rpg']
-handler.command = /^topup$/i
+handler.command = /^tplimit|tpl|topuplimit$/i
 handler.mods = true
 
 module.exports = handler

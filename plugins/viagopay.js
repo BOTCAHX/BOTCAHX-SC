@@ -1,11 +1,14 @@
 let handler = async (m, { conn }) => {
 	conn.reply(m.chat, `╠═〘 PEMBAYARAN 〙 ═
-╠═ Untuk Pembayaran Via GoPay
-╠➥ Ketuk link ini https://bit.ly/3trIWGs
+╠═ Untuk Pembayaran Via Gopay
+╠➥ Ke nomer ini
+║➥ 089677763976
 ║
 ╠═〘 Fitur 〙 ═
 ║
-╠➥ *FITUR WELCOME*
+╠➥ *FITUR DOWNLOADER 500++
+║     YouTube, Twitter, 
+║     Tiktok, Instagram, dll.
 ║    *FITUR STIKER*
 ╠➥ *FITUR ADMIN*
 ║    *KICK ORANG*
@@ -21,7 +24,7 @@ let handler = async (m, { conn }) => {
 ║ 
 ╠═ ©2021 Rpg wabot-aq
 ╠═ Scrip original by Nurutomo
-╠═〘 Mike BOT〙 ═`.trim(), m)
+╠═〘 ${namabot} 〙 ═`.trim(), m)
 }
 
 handler.command = /^viagopay$/i

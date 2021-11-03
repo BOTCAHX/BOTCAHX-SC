@@ -2,7 +2,7 @@ let axios = require("axios");
 let handler = async(m, { conn, text }) => {
 
 	axios.get(`http://docs-jojo.herokuapp.com/api/renungan`).then ((res) => {
-	 	let hasil = `*${res.data.judul}*\n\n${res.data.isi}\n\nPesan : ${res.data.pesan}`
+	 	let hasil = `*${res.data.judul}*\n\nIsi :\n${res.data.Isi}\n\nPesan :\n${res.data.pesan}`
 
     conn.reply(m.chat, hasil, m)
 	})

@@ -19,10 +19,10 @@ Ketik ${usedPrefix}who untuk bantuan
 Bonus: ${poin} XP
 `.trim()
     conn.siapakahaku[id] = [
-        await conn.sendButton(m.chat, caption, '© mikebot', 'Bantuan', '.who'),
+        await conn.sendButton(m.chat, caption, footer, 'Bantuan', '.who',m),
         json, poin,
         setTimeout(async () => {
-            if (conn.siapakahaku[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© stikerin', 'Siapakah Aku', '.siapaaku')
+            if (conn.siapakahaku[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, footer, 'Siapakah Aku', '.siapaaku',m)
             delete conn.siapakahaku[id]
         }, timeout)
     ]

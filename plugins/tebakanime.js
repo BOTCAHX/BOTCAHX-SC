@@ -17,10 +17,10 @@ Ketik ${usedPrefix}wa untuk bantuan
 Bonus: ${poin} XP
 `.trim()
     conn.tebakanime[id] = [
-        await conn.sendButtonImg(m.chat, await (await fetch(json.image)).buffer(), caption, '© mikebot', 'BANTUAN', '.wa', m),
+        await conn.sendButtonImg(m.chat, await (await fetch(json.image)).buffer(), caption, footer, 'BANTUAN', '.wa', m),
         json, poin,
         setTimeout(async () => {
-            if (conn.tebakanime[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.name}*`, '© mikebot', 'Tebak Anime', `${usedPrefix + command}`, m)
+            if (conn.tebakanime[id]) await conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.name}*`, footer, 'Tebak Anime', `${usedPrefix + command}`, m)
             delete conn.tebakanime[id]
         }, timeout)
     ]

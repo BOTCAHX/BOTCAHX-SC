@@ -3,7 +3,9 @@ let waifu = require('nekos.life')
 let neko = new waifu()
      let handler  = async (m, { conn, args }) => {
      kk = await neko.sfw.avatar()
-   conn.sendFile(m.chat, kk.url, 'avatar.jpg', 'avatarnya kak', m, false)
+     m.reply(wait)
+     conn.sendFile(m.chat, kk.url, 'avatar.jpg', kasihcaption, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
 }
 handler.help = ['ppwibu']
 handler.tags = ['wibu']

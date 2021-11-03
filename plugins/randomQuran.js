@@ -15,7 +15,7 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 	Surat : ${surat}
 	Ayat : ${ayat}`.trim()
 
-    conn.sendButton(m.chat, hasil, '© mikebot', 'Quran Random', `${usedPrefix + command}`, m)
+    conn.sendButton(m.chat, hasil, footer, 'Quran Random', `${usedPrefix + command}`, m)
 }
 handler.help = ['randomquran']
 handler.tags = ['islam']

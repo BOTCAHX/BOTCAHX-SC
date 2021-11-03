@@ -4,12 +4,12 @@ let handler = async (m, { conn, args, text}) => {
     let [orang, nama] = text.split`| `
     if (!who) throw 'Tag salah satu lah'
     if (!orang) throw 'Tag salah satu lah'
-    if (!nama) throw 'namanya apa?\n kalo mau kasi nama pake\n#titlein @mention|nama'
+    if (!nama) throw 'namanya apa?\n kalo mau kasi nama pake\n#titlein @mention | nama'
     if (!(who in global.db.data.users)) throw 'User tidak terdaftar dalam DATABASE!!'
     let user = global.db.data.users[who]
   user.title = nama
   m.reply(`
-${conn.getName(who)} sekarang mendapatkan title\n${nama}
+@${who.split`@`[0]} sekarang mendapatkan title\n${nama}
 `)
 }
 handler.help = ['titlein [nama]']

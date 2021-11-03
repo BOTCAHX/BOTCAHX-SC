@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 	conn.reply(m.chat, `╠═〘 PEMBAYARAN 〙 ═
-╠═ Untuk Pembayaran Via DANA
+╠═ Untuk Pembayaran Via OVO
 ╠➥ Ke nomer ini
 ║➥ 089677763976
 ║
@@ -27,6 +27,6 @@ let handler = async (m, { conn }) => {
 ╠═〘 ${namabot} 〙 ═`.trim(), m)
 }
 
-handler.command = /^viadana$/i
+handler.command = /^viaovo$/i
 
 module.exports = handler

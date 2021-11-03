@@ -8,10 +8,12 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!mime) throw `Unknown Mimetype`
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak didukung`
   let img = await q.download()
+  m.reply(wait)
   let link = await uploadImage(img).catch(e => uploadFile(img))
   conn.sendFile(m.chat, global.API('https://api.memegen.link', `/images/custom/${encodeURIComponent(t1 ? t1 : '')}/${encodeURIComponent(t2 ? t2 : '')}.png`, {
     background: link
-  }), 'meme.png', '© stikerin', m)
+  }), 'meme.png', kasihcaption, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
 }
 handler.help = ['mememaker'].map(v => v + ' <teks atas>|<teks bawah>')
 handler.tags = ['tools']

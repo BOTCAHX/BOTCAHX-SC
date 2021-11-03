@@ -10,7 +10,7 @@ let handler = async (m, { conn, text }) => {
   if (!res.ok) throw await res.text()
   let json = await res.json()
   let img = json.result[Math.floor(Math.random() * json.result.length)]
-  if (json.status) conn.sendFile(m.chat, img.img_hd, 'unsplash', 'Nih Unsplash! @Daeho', m)
+  if (json.status) conn.sendFile(m.chat, img.img_hd, 'unsplash', 'Nih Unsplash!', m)
     else throw json
 }
 handler.help = ['unsplash <keyword>']

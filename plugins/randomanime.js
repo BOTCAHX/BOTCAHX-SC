@@ -20,7 +20,8 @@ Cantik Kan?
             (response) => {
 	let buf = Buffer.from(response, 'base64'); // Ta-da
 
-    conn.sendFile(m.chat, buf, 'foto.jpg', str, m)
+    conn.sendFile(m.chat, buf, 'foto.jpg', str, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
             }
         )
         .catch(

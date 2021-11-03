@@ -1,8 +1,9 @@
 let fetch = require('node-fetch')
  let handler = async (m, { conn, usedPrefix, command }) => {
- 	let heum = await fetch(`https://api.lolhuman.xyz/api/quotes/islami?apikey=Dawnfrostkey`)
+ 	let heum = await fetch(`https://api.lolhuman.xyz/api/quotes/islami?apikey=${lolkey}`)
  amin = await heum.json()
-    conn.sendButton(m.chat, `${amin.result}`.trim(), '© mikebot', 'Quote Islami', `${usedPrefix + command}`)
+    conn.sendButton(m.chat, `${amin.result}`.trim(), footer, 'Quote Islami', `${usedPrefix + command}`, m, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
     }
     
 handler.help = ['muslimq']

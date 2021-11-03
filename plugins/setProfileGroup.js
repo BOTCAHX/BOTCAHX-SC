@@ -10,7 +10,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['setpp']
 handler.tags = ['group']
 
-handler.command = /^setpp$/i
+handler.command = /^set(pp|ppgc)$/i
 
 handler.group = true
 handler.admin = true

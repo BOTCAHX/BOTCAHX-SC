@@ -4,6 +4,7 @@ const uploadFile = require('../lib/uploadFile')
 const uploadImage = require('../lib/uploadImage')
 let { webp2png } = require('../lib/webp2mp4')
 let handler = async (m, { conn, args, usedPrefix, command }) => {
+m.reply(wait)
   let stiker = false
   try {
     let q = m.quoted ? m.quoted : m

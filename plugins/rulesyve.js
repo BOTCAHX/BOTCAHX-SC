@@ -7,50 +7,51 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let uptime = clockString(_uptime) 
   let totalreg = Object.keys(global.db.data.users).length
   let old = Math.round(performance.now())
-  await m.reply('wait Kakak!!')
+  //await m.reply('wait Kakak!!')
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
-╠═〘 PIRACY YVE BOT 〙 ═
-║
-╠➥ *SEMUA YANG DIKATAKAN OWNER*
-║     *ADALAH MUTLAK*
-╠➥ *KALO KETAHUAN MENGHINA BOT*
-║    *SAMA OWNER BAKALAN DI WARN*
-║    *ATAU DI BAN*
-╠➥ *MOHON UNTUK TIDAK MENELPON*
-║    *DAN SPAM CHAT SAMA BOT*
-║    *JIKA MELANGGAR = BLOCK*
-╠➥ *KAMI TIDAK BERTANGGUNG*
-║   *JAWAB ATAS PENYALAH*
-║   *GUNAAN BOT*
-╠➥ *KAMI TIDAK BERTANGGUNG*
-║   *JAWAB ATAS KEBOCORAN DATA*
-║   *PRIBADI ANDA*
-╠➥ *KAMI AKAN MENYIMPAN DATA*
-║   *SEPERTI NOMER TELEPON*
-║   *ANDA DI DATABASE KAMI*
-║ 
-║${readMore}
-╠═〘 ${package.name} 〙 ═
-╠➥ *Versi:* ${package.version}
-╠➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
-╠➥ *Issue:* ${package.bugs.url}
-╠➥ *Ping:* ${neww - old} *ms*
-╠➥ *Total user:* ${totalreg} *user*
-╠➥ *Uptime:* ${uptime}
-║
-╠═〘 DONASI 〙 ═
-╠➥ Gopay: 082297563380
-╠➥ Telkomsel: 082297563380
-║
-╠═ Request? ${package.bugs.url}
-╠═ officiall Group *${conn.getName(conn.user.jid)}* :
-${(global.linkGC).map((v, i) => '║ *Group ' + (i + 1) + '*\n║' + v).join`\n║\n`}
-║
-║ 
-╠═ ©2021 ${package.name}
-╠═ Scrip original by Nurutomo
-╠═〘 Mike BOT〙 ═
+═〘 Rules ${namabot} 〙═
+
+➥ Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam
+
+➥ Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot
+
+➥ Kami tidak bertanggung jawab atas penyalahgunaan bot
+
+➥ Kami tidak bertanggung jawab atas kebocoran data pribadi anda
+
+
+➥ ${namabot} Versi ${package.version}
+➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
+➥ *Issue:* ${package.bugs.url}
+➥ *Ping:* ${neww - old} *ms*
+➥ *Total user:* ${totalreg} *user*
+➥ *Uptime:* ${uptime}
+
+═ 〘 DONASI 〙 ═
+➥ Pulsa : 089677763976
+➥ Dana & OVO: 089677763976
+
+
+➥ Request? ${package.bugs.url}
+
+Official Grup :
+
+Grup 1 :
+${gc1}
+
+Grup 2 :
+${gc2}
+
+Grup 3 :
+${gc3}
+
+
+ ©2021 ${namabot}
+ Script original by Nurutomo
+ 
+ 
+═〘 ${namabot} 〙 ═
 `.trim(), m)
 }
 
