@@ -2,6 +2,7 @@
 
 let fetch = require('node-fetch')
 let handler = async (m, { text }) => {
+m.reply(wait)
   let res = await fetch(global.API('https://some-random-api.ml', '/lyrics', {
     title: text
   }))
@@ -13,7 +14,8 @@ let handler = async (m, { text }) => {
 _${json.author}_\n
 ${json.lyrics}\n\n
 ${json.links.genius}
-`, m)
+`, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
 }
 handler.help = ['lirik'].map(v => v + ' <Apa>')
 handler.tags = ['internet', 'edukasi']

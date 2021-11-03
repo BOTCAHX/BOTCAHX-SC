@@ -1,23 +1,22 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, args }) => {
-   response = args.join(' ').split('|')
-  if (!args[0]) throw 'Masukkan Parameter'
-  m.reply('Sedang Diproses...')
-  // https://api.lolhuman.xyz/api/photooxy2/pubg?apikey=beta&text1=LoL&text2=Human
-  let res = await fetch(`https://lolhuman.herokuapp.com/api/photooxy2/battlefield4?apikey=Dawnfrostkey&text1=${response[0]}&text2=${response[1]}`)
-  conn.sendFile(m.chat, res, 'nama.jpg', `Nih Mhank`, m, false)
+let handler = async (m, { conn, text }) => {
+if (!text) throw '_Text nya mana tod?_'
+let [kiri, kanan] = text.split('|')
+await conn.sendFile(m.chat, global.API('https://api.lolhuman.xyz', '/api/photooxy2/battlefield4', {
+ text1: kiri,
+ text2: kanan,
+ theme: 'battlefield4',
+ apikey: lolkey
+}), 'error cuk', `${kasihcaption}`, m)
 }
 handler.help = ['battlefield'].map(v => v + ' <teks|teks>')
 handler.tags = ['sticker']
-
-handler.command = /^(battlefield)$/i
+handler.command = /^battlefield|bf|btf$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
 handler.register = true
-
 handler.admin = false
 handler.botAdmin = false
 

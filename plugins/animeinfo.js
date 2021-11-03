@@ -1,5 +1,6 @@
 let fetch = require('node-fetch')
 let handler = async(m, { conn, text }) => {
+m.reply(global.wait)
   if (!text) throw `Masukkan query!`
   let res = await fetch(global.API('https://api.jikan.moe', '/v3/search/anime', { q: text }))
   if (!res.ok) throw await res.text()
@@ -15,10 +16,10 @@ let animeingfo = `✨️ *Title:* ${title}
 👥 *Members:* ${members}
 💚️ *Synopsis:* ${synopsis}
 🌐️ *URL*: ${url}`
-  conn.sendFile(m.chat, image_url, '', animeingfo, m)
+await conn.sendFile(m.chat, image_url, '', animeingfo, m)
 }
 handler.help = ['anime <judul>']
 handler.tags = ['anime']
-handler.command = /^(anime|animeinfo)$/i
+handler.command = /^(infoanime|animeinfo)$/i
 //maapin fatur :<
 module.exports = handler

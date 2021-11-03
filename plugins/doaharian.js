@@ -13,7 +13,7 @@ ${json.latin}
 Artinya:
 _"${json.translation}"_
 `.trim()
-  await conn.sendButton(m.chat, caption, '© mikebot', 'Doa Harian', `${usedPrefix + command}`, m)
+  await conn.sendButton(m.chat, caption, footer, 'Doa Harian', `${usedPrefix + command}`, m)
 }
 handler.help = ['doaharian']
 handler.tags = ['quran']

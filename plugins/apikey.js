@@ -14,7 +14,7 @@ let handler = async m => m.reply(`
 ┣➥ *LeysKey* = MNQYOVSL
 ┣➥ *apixteam* = 7415bc4287ad5ca8
 ┣➥ *apiKey* = 7ed90d537ab5edddb6ba6465
-┣➥ *LolKey* = Danwfrostkey
+┣➥ *LolKey* = RFK-Rey
 ┣➥ *odckey* = onlygay
 ┣➥ *onlydev* = PunyaIkyAds
 ┣➥ *xteam* = AbilGanss

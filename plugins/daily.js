@@ -12,7 +12,7 @@ let handler = async (m, { conn }) => {
         global.db.data.users[m.sender].lastclaim = new Date * 1
     } else {
         let buttons = `silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`.trim()
-        conn.send2Button(m.chat, buttons, '� MikeBot', 'Weekly', '#weekly', 'Monthly', '#monthly')
+        conn.send2Button(m.chat, buttons, footer, 'Weekly', '#weekly', 'Monthly', '#monthly')
     }
 }
 handler.help = ['claim']
@@ -58,7 +58,7 @@ function button(teks, user) {
     
     const buttonMessage = {
         contentText: teks,
-        footerText: '©games-wabot',
+        footerText: footer,
         buttons: buttons,
         headerType: 1
     }

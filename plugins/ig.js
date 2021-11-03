@@ -4,13 +4,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
   if (!args[0]) throw `uhm.. url nya mana?\n\ncontoh:\n${usedPrefix + command} https://www.instagram.com/p/CQU21b0JKwq/`
   if (!args[0].match(/https:\/\/www.instagram.com\/(p|reel|tv)/gi)) throw `url salah, perintah ini untuk mengunduh post/reel/tv`
-
+m.reply(wait)
   igdl(args[0]).then(async res => {
     let igdl = JSON.stringify(res)
     let json = JSON.parse(igdl)
-    await m.reply(global.wait)
+    //await m.reply(global.wait)
     for (let { downloadUrl, type } of json) {
-      conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), '© stikerin', m)
+await conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), kasihcaption, m, true, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
     }
   })
 

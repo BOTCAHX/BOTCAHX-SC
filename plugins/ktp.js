@@ -5,9 +5,9 @@ let { getBuffer, succes } = require('../lib/functions.js');
 let handler = async(m, { conn, text }) => {
 let [nik, prov, kabu, name, ttl, jk, jl, rtrw, lurah, camat, agama, nikah, kerja, warga, until, img] = text.split `|`
 
-let str = `
+/*let str = `
 Nihh,, Buat apa sihh
-`.trim()
+`.trim()*/
 
     if (!nik) return conn.reply(m.chat, 'Silahkan masukan nik', m)
     if (!prov) return conn.reply(m.chat, 'Silahkan masukan nama provinsi', m)
@@ -33,7 +33,7 @@ Nihh,, Buat apa sihh
   let vuss = await ftype.fromStream(voss.body)
   if (vuss !== undefined) {
 
-     conn.sendFile(m.chat, await getBuffer(buff), 'ktp.jpg', str, m)
+     conn.sendFile(m.chat, await getBuffer(buff), 'ktp.jpg', kasihcaption, m)
      }
 }
 handler.help = ['ktp <nik|prov|kabu|name|ttl|jk|jl|rtrw|lurah|camat|agama|nikah|kerja|warga|until|url>']

@@ -7,7 +7,7 @@ let handler = async(m, { conn, text }) => {
   if (!text) return conn.reply(m.chat, 'Harap Masukan Query', m)
 
   await m.reply('Searching...')
-    let res = await fetch(`https://api.zeks.xyz/api/apkpure?q=${text}&apikey=MIMINGANZ`)
+    let res = await fetch(`https://api.zeks.xyz/api/apkpure?q=${text}&apikey=${zekskey}`)
     let json = await res.json()
     if (!json.status) throw json
     let data = json.result

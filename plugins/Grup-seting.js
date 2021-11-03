@@ -15,7 +15,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 contoh:
 ${usedPrefix + command} tutup
 ${usedPrefix + command} buka
-	`.trim(), '© mikebot', 'BUKA', ',grup 1', 'TUTUP', ',grup 0')
+	`.trim(), footer, 'BUKA', '#grup open', 'TUTUP', '#grup close',m)
 		throw false
 	}
 	await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, isClose)

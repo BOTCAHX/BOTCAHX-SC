@@ -52,17 +52,17 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${json.te
             global.db.data.users[m.sender].uncommon += uncommon * 1
             global.db.data.users[m.sender].sampah += sampah * 1
             global.db.data.users[m.sender].lastadventure = new Date * 1
-            conn.sendButtonLoc(m.chat, img, str, '© mikebot', 'HEAL', '.heal', m)
+            conn.sendButtonLoc(m.chat, img, str, footer, 'HEAL', '.heal', m)
             if (mythic > 0) {
                    global.db.data.users[m.sender].mythic += mythic * 1
-                   conn.sendButton(m.chat, '*Selamat anda mendapatkan item Rare yaitu*\n' + mythic + ' Mythic Crate', '© mikebot', 'Open', '.open mythic 1', m)
+                   conn.sendButton(m.chat, '*Selamat anda mendapatkan item Rare yaitu*\n' + mythic + ' Mythic Crate', footer, 'Open', '.open mythic 1', m)
             }
             if (legendary > 0) {
                 global.db.data.users[m.sender].legendary += legendary * 1
-                conn.sendButton(m.chat, '*Selamat anda mendapatkan item Epic yaitu*\n' + legendary + ' Legendary Crate', '© mikebot', 'Open', '.open legendary 1', m)
+                conn.sendButton(m.chat, '*Selamat anda mendapatkan item Epic yaitu*\n' + legendary + ' Legendary Crate', footer, 'Open', '.open legendary 1', m)
             }
-            } else conn.sendButton(m.chat, `Anda sudah berpetualang dan kelelahan, silahkan coba *${timers}* lagi`.trim(), '© mikebot', 'Inventory', '.inv', m)
-        } else conn.send2Button(m.chat, 'Minimal 80 health untuk bisa berpetualang, beli nyawa dulu dengan ketik *' + usedPrefix + 'shop buy potion <jumlah>*\ndan ketik *' + usedPrefix + 'use potion <jumlah>*\n\n_Untuk mendapat money dan potion gratis ketik_ *' + usedPrefix + 'claim*', '© mikebot', 'Heal', '#heal', 'Buy Potion', '.buy potion 1', m)
+            } else conn.sendButton(m.chat, `Anda sudah berpetualang dan kelelahan, silahkan coba *${timers}* lagi`.trim(), footer, 'Inventory', '.inv', m)
+        } else conn.send2Button(m.chat, 'Minimal 80 health untuk bisa berpetualang, beli nyawa dulu dengan ketik *' + usedPrefix + 'shop buy potion <jumlah>*\ndan ketik *' + usedPrefix + 'use potion <jumlah>*\n\n_Untuk mendapat money dan potion gratis ketik_ *' + usedPrefix + 'claim*', footer, 'Heal', '#heal', 'Buy Potion', '.buy potion 1', m)
     } catch (e) {
         console.log(e)
         conn.reply(m.chat, 'Error', m)

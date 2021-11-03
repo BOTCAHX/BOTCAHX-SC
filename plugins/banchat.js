@@ -1,5 +1,7 @@
 let handler = async (m, { conn, isOwner, text, isAdmin }) => {
-  let who
+//y = groupMetadata
+//m.reply(y.subject)
+ let who
   if (m.isGroup) {
     if (!(isAdmin || isOwner)) {
       global.dfail('admin', m, conn)
@@ -18,7 +20,7 @@ let handler = async (m, { conn, isOwner, text, isAdmin }) => {
   try {
     if (who.endsWith('g.us')) global.db.data.chats[who].isBanned = true
     else global.db.data.users[who].banned = true
-    m.reply(`${conn.user.name} tidak aktif dichat ${conn.getName(who) == undefined ? 'ini' : conn.getName(who)}.`)
+    m.reply(`${namabot} tidak aktif dichat @${who.split`@`[0]}`) //== undefined ? 'ini' : (y.subject)`)
   } catch (e) {
     throw `nomor tidak ada didatabase!`
   }
@@ -26,5 +28,5 @@ let handler = async (m, { conn, isOwner, text, isAdmin }) => {
 handler.help = ['ban']
 handler.tags = ['owner', 'group']
 handler.command = /^ban(chat)?$/i
-
+handler.mods = true
 module.exports = handler

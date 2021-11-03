@@ -18,7 +18,7 @@ Jika warning mencapai 5 kamu akan dibanned
 ketik *#on antibadword* untuk menyalakan antibadword
 ketik *#astagfirullah* atau *#maaf* untuk mengurangi warning
 
-“Barang siapa yang beriman kepada Allah dan Hari Akhir maka hendaklah dia berkata baik atau diam” (HR. al-Bukhari dan Muslim).`, '© stikerin', 'Nyalakan Antibadword', '.on antibadword', 'Astaghfirullah', '#maaf', m)
+“Barang siapa yang beriman kepada Allah dan Hari Akhir maka hendaklah dia berkata baik atau diam” (HR. al-Bukhari dan Muslim).`, footer, 'Nyalakan Antibadword', '.on antibadword', 'Astaghfirullah', '#maaf', m)
         if (user.warn >= 5) {
             user.banned = true
             if (m.isGroup) {

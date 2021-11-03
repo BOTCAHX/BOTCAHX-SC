@@ -54,7 +54,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let userslegendary = sortedlegendary.map(v => v[0])
     let str = `
 Inventory *${name.vnmae || name.notify || name.name || ('+' + name.jid.split`@`[0])}*
-${readMore}
+
 🏷️Title: *${title ? '' : 'Tidak ada'}*\n
 ❤️Health: *${healt}*
 💳Role: *${role}*
@@ -82,22 +82,22 @@ Total inv: *${diamond + potion + sampah + makananpet}* item\n
 🎁Legendary: *${legendary}*
 🎁Pet: *${pet}*\n
 *Pet*
-🐎Kuda: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level MAX' : ''}*
-🦊Rubah: *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level MAX' : ''}*
-🐈Kucing: *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || kucing == 2 ? 'Level 2' : '' || kucing == 3 ? 'Level 3' : '' || kucing == 4 ? 'Level 4' : '' || kucing == 5 ? 'Level MAX' : ''}*\n\n
+🐈Kucing: *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || kucing == 2 ? 'Level 2' : '' || kucing == 3 ? 'Level 3' : '' || kucing == 4 ? 'Level 4' : '' || kucing == 5 ? 'Level 5' : '' || kucing == 6 ? 'Level 6' : '' || kucing == 7 ? 'Level 7' : '' || kucing == 8 ? 'Level 8' : '' || kucing == 9 ? 'Level 9' : '' || kucing == 10 ? 'Level 10' : '' || kucing == 11 ? 'Level 11' : '' || kucing == 12 ? 'Level 12' : '' || kucing == 13 ? 'Level 13' : '' || kucing == 14 ? 'Level 14' : '' || kucing == 15 ? 'Level 15' : '' || kucing == 16 ? 'Level 16' : '' || kucing == 17 ? 'Level 17' : '' || kucing == 18 ? 'Level 18' : '' || kucing == 19 ? 'Level 19' : '' || kucing == 20 ? 'Level 20 MAX' : ''}*
+🦊Rubah: *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level 5' : '' || rubah == 6 ? 'Level 6' : '' || rubah == 7 ? 'Level 7' : '' || rubah == 8 ? 'Level 8' : '' || rubah == 9 ? 'Level 9' : '' || rubah == 10 ? 'Level 10' : '' || rubah == 11 ? 'Level 11' : '' || rubah == 12 ? 'Level 12' : '' || rubah == 13 ? 'Level 13' : '' || rubah == 14 ? 'Level 14' : '' || rubah == 15 ? 'Level 15' : '' || rubah == 16 ? 'Level 16' : '' || rubah == 17 ? 'Level 17' : '' || rubah == 18 ? 'Level 18' : '' || rubah == 19 ? 'Level 19' : '' || rubah == 20 ? 'Level 20 MAX' : ''}*
+🐎Kuda: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level 5' : '' || kuda == 6 ? 'Level 6' : '' || kuda == 7 ? 'Level 7' : '' || kuda == 8 ? 'Level 8' : '' || kuda == 9 ? 'Level 9' : '' || kuda == 10 ? 'Level 10' : '' || kuda == 11 ? 'Level 11' : '' || kuda == 12 ? 'Level 12' : '' || kuda == 13 ? 'Level 13' : '' || kuda == 14 ? 'Level 14' : '' || kuda == 15 ? 'Level 15' : '' || kuda == 16 ? 'Level 16' : '' || kuda == 17 ? 'Level 17' : '' || kuda == 18 ? 'Level 18' : '' || kuda == 19 ? 'Level 19' : '' || kuda == 20 ? 'Level 20 MAX' : ''}*\n\n
 *Progres*\n
 ╭────────────────
 │🧬Level *${level}* To Level *${level}*
 │📈Exp *${exp}* -> *${max}*
 ╰────────────────
 ╭────────────────
-│Rubah🦊 ${rubah == 0 ? 'Tidak Punya' : '' || rubah > 0 && rubah < 5 ? `Level *${rubah}* To level *${rubah + 1}*\n│Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 5 ? '*Max Level*' : ''}
+│Kucing🐈 ${kucing == 0 ? 'Tidak Punya' : '' || kucing > 0 && kucing < 20 ? `Level *${kucing}* To level *${kucing + 1}*\n│Exp *${_kucing}* -> *${kucing *100}*` : '' || kucing == 20 ? '*Max Level*' : ''}
 ╰────────────────
 ╭────────────────
-│Kucing🐈 ${kucing == 0 ? 'Tidak Punya' : '' || kucing > 0 && kucing < 5 ? `Level *${kucing}* To level *${kucing + 1}*\n│Exp *${_kucing}* -> *${kucing *100}*` : '' || kucing == 5 ? '*Max Level*' : ''}
+│Rubah🦊 ${rubah == 0 ? 'Tidak Punya' : '' || rubah > 0 && rubah < 20 ? `Level *${rubah}* To level *${rubah + 1}*\n│Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 3 ? '*Max Level*' : ''}
 ╰────────────────
 ╭────────────────
-│Kuda🐎 ${kuda == 0 ? 'Tidak Punya' : '' || kuda > 0 && kuda < 5 ? `Level *${kuda}* To level *${kuda + 1}*\n│Exp *${_kuda}* -> *${kuda *100}*` : '' || kuda == 5 ? '*Max Level*' : ''}
+│Kuda🐎 ${kuda == 0 ? 'Tidak Punya' : '' || kuda > 0 && kuda < 20 ? `Level *${kuda}* To level *${kuda + 1}*\n│Exp *${_kuda}* -> *${kuda *100}*` : '' || kuda == 20 ? '*Max Level*' : ''}
 ╰────────────────\n\n
 *achievement*
 ${readMore}
@@ -114,7 +114,8 @@ ${readMore}
 Warn: *${warn}*
 Banned: *No*
 `.trim()
-    conn.send2Button(m.chat, str, '© mikebot', 'PROFILE', '.profile', 'SHOP', '#shop', m)
+    conn.send2Button(m.chat, str, footer, 'PROFILE', '.profile', 'SHOP', '#shop', m, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
 }
 handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']

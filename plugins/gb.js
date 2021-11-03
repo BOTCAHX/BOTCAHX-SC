@@ -1,14 +1,15 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `SC VIA GITHUB JNGN LUPA FOLLOW
+ye = `@${m.sender.split`@`[0]}`
+let info = `Hai Kak ${ye} Nih SC VIA GITHUB ${ye} JANGAN LUPA FOLLOW
 Atau Bisa Lewat Link Dibawah Ini :
-https://github.com/Dawnfrosty
+https://github.com/RTeam1
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*YANG FOLLOW DPT 1JT MONEY*', 'status@broadcast') 
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*${global.packname}*`, 'status@broadcast') 
 }
 handler.help = ['github']
 handler.tags = ['info']
-handler.command = /^(github)$/i
+handler.command = ['script', 'sc', 'scbot', 'github']
 handler.owner = false
 handler.mods = false
 handler.premium = false

@@ -21,7 +21,7 @@ Maaf Kamu akan dikick oleh *MIKE BOT*
  if (isBotAdmin) {
    conn.groupRemove(m.chat, [asu])
      } else { 
-     	m.reply('```JADIKAN MIKEBOT SEBAGAI ADMIN !!!```')
+     	m.reply('```JADIKAN BOT SEBAGAI ADMIN !!!```')
     }
   } conn.sendMessage(vir + '@s.whatsapp.net', `${m.text}`, MessageType.text)
 }

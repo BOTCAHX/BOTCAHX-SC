@@ -1,12 +1,9 @@
 let fetch = require('node-fetch')
 let handler = async(m, { conn, text }) => {
-
-  await m.reply(global.wait)
-
+await m.reply(global.wait)
     let res = await (await fetch(`https://st4rz.herokuapp.com/api/infogempa`)).json()
         let str = `*INFO GEMPA*\n\nLokasi : ${res.lokasi}\nKedalaman : ${res.kedalaman}\nKoordinat : ${res.koordinat}\nMagnitude : ${res.magnitude}\nPotensi : ${res.potensi}\nWaktu : ${res.waktu}`
-
-    conn.sendButtonLoc(m.chat, await (await fetch(res.map)).buffer(), str, '© mikebot', 'News', '#? news', m)
+    conn.sendButtonLoc(m.chat, await (await fetch(res.map)).buffer(), str, footer, 'News', '#? news', m)
 }
 handler.help = ['infobmkg','infogempa']
 handler.tags = ['news']

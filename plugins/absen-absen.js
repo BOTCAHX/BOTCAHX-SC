@@ -27,7 +27,7 @@ ${list}
 │ 
 └────
 
-_by Ariffb_`, m, { contextInfo: { mentionedJid: absen } })
+*「 ABSEN 」*`, m, { contextInfo: { mentionedJid: absen } })
 }
 handler.help = ['absen']
 handler.tags = ['absen']

@@ -12,7 +12,7 @@ let handler = async(m, { conn, text }) => {
     desc,
   } = json.result
 	 	let hasil = `*🎥Film Dari ${text}*\n\n🏷️Judul : ${title}\n🔖Genre: : ${genre}\n⭐Rating : ${rating}\n🎥Link Movie : ${link}\n📖Sinopsis : ${desc}`.trim()
-    conn.sendButtonImg(m.chat, await (await fetch(json.result.thumbnail)).buffer(), hasil, '© mikebot', 'Internet', '.? internet', m)
+    conn.sendButtonImg(m.chat, await (await fetch(json.result.thumbnail)).buffer(), hasil, footer, 'Internet', '.? internet', m)
 }
 handler.help = ['filmanime', 'film'].map(v => v + '<film>')
 handler.tags = ['internet', 'anime']

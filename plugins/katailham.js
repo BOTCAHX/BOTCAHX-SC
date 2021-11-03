@@ -1,11 +1,8 @@
 let axios = require("axios")
-
 let handler = async(m, { conn, usedPrefix, command }) => {
-
- axios.get(`https://leyscoders-api.herokuapp.com/api/katailham?apikey=MIMINGANZ`).then((res) => {
-   let hasil = `${res.data.result}`
-
-    conn.sendButton(m.chat, hasil, '© mikebot', 'Kata ilham', `${usedPrefix + command}`, m)
+axios.get(`https://leyscoders-api.herokuapp.com/api/katailham?apikey=MIMINGANZ`).then((res) => {
+let hasil = `${res.data.result}`
+conn.sendButton(m.chat, hasil, footer, 'Kata ilham', `${usedPrefix + command}`, m, { contextInfo: { forwardingScore: 999, isForwarded: true }})
 	})
 }
 handler.help = ['kata'].map(v => v + 'ilham')
