@@ -44,9 +44,9 @@ lolkey = 'RFK-Rey'
 zekskey = 'apivinz'
 xteamkey = 'Dawnfrostkey'
 //xteam        MIMINETBOT
-namaig = ''
-namagithub = ''
-kasihcaption = '.'
+namaig = 'https://bit.ly/3bsNELT'
+namagithub = 'https://bit.ly/3pMwhxZ'
+kasihcaption = `Nih kak\nJangan lupa Follow ${namaig}\n&\n${namagithub}`
 //kasihcaption = `Nih Kak\nJangan lupa follow\n${namaig}\n&\n${namagithub}`
 
 // Sticker WM
@@ -54,9 +54,9 @@ global.packname = '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧' /
 global.author = '' // ganti aja
 
 //yyy
-bc = 'Y' //RFK Broadcast
-footer = '\nZazizuzezo\.\n.\n.\n.'
-namabot = 'Zux Bot'
+bc = 'RFK' //RFK Broadcast
+footer = '©RFK Bot'
+namabot = 'RFK Bot'
 namalu = 'Alfarizi'
 
 
