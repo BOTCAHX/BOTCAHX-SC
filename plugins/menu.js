@@ -8,7 +8,7 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┏━━〔 %me 〕━⬣
+┏━━〔 ${namabot} 〕━⬣
 ┃⬡ Hai, %name!
 ┃
 ┃⬡ Tersisa *%limit Limit*
@@ -38,7 +38,8 @@ ${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
-	let bzz = './src/ara.mp3'
+	//let bzz = './src/ara.mp3'
+	let bzz = fs.readFileSync('./src/ara.mp3')
 	let { anon, anticall, antispam, antitroli, backup, jadibot, groupOnly, nsfw } = global.db.data.settings[conn.user.jid]
     let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
 
