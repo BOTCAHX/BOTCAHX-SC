@@ -58,7 +58,7 @@ global.author = '' // ganti aja
 
 //yyy
 bc = 'RFK' //RFK Broadcast
-footer = '©RFK Bot'
+footer = '\n©RFK Bot'
 namabot = 'RFK Bot'
 namalu = 'Alfarizi'
 
