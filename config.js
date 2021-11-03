@@ -47,6 +47,9 @@ xteamkey = 'Dawnfrostkey'
 namaig = 'https://bit.ly/3bsNELT'
 namagithub = 'https://bit.ly/3pMwhxZ'
 kasihcaption = `Nih kak\nJangan lupa Follow ${namaig}\n&\n${namagithub}`
+namakontak1 = 'Rey Alfarizi'
+namakontak2 = 'Rey Alfarizi'
+
 //kasihcaption = `Nih Kak\nJangan lupa follow\n${namaig}\n&\n${namagithub}`
 
 // Sticker WM
