@@ -39,7 +39,8 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) =>  {
                     if (global.db.data.users[m.sender].potion >= count * 1) {
                         global.db.data.users[m.sender].potion -= count * 1
                         global.db.data.users[m.sender].healt += usepotion * count
-                        conn.sendButton(m.chat, msgsucces, '© mikebot', 'Adventure', `${usedPrefix}mulung`, m)
+                        conn.sendButton(m.chat, msgsucces, footer, 'Adventure', `${usedPrefix}mulung`, m, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
                     } else conn.reply(m.chat, msgkurang, m)
                 } else conn.reply(m.chat, msgpenuh, m)
             } catch (e) {
