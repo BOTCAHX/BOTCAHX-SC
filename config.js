@@ -58,7 +58,7 @@ global.author = 'Raditya' // ganti aja
 
 //yyy
 bc = 'RFK' //RFK Broadcast
-footer = '\n RadBotZ'
+footer = '\n©RadBotZ'
 namabot = 'Radbot'
 namalu = 'Raditya'
 
