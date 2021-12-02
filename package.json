@@ -19,16 +19,16 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/Nurutomo/wabot-aq",
+  "homepage": "https://github.com/Andriiwalker/wabot-aq",
   "author": {
-    "name": "Nurutomo"
+    "name": "Andrii Street Moonshine"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
+    "url": "git+https://github.com/Andriiwalker/wabot-aq.git"
   },
   "bugs": {
-    "url": "https://github.com/Nurutomo/wabot-aq/issues"
+    "url": "https://github.com/Andriiwalker/wabot-aq/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
