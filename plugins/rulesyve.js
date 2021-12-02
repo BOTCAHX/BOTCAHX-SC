@@ -29,8 +29,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ➥ *Uptime:* ${uptime}
 
 ═ 〘 DONASI 〙 ═
-➥ Pulsa : 089677763976
-➥ Dana & OVO: 089677763976
+➥ Pulsa : 083822759168
+➥ Dana & OVO: 083822759168
 
 
 ➥ Request? ${package.bugs.url}
@@ -48,7 +48,7 @@ ${gc3}
 
 
  ©2021 ${namabot}
- Script original by Nurutomo
+ Script original by Andrii Street Moonshine
  
  
 ═〘 ${namabot} 〙 ═
