@@ -11,7 +11,7 @@
 // thank you to ALL Bot creator
 // and thanks you to who support my Bot
 
-gc1 = 'https://chat.whatsapp.com/CZhKbKKNTf61Pa4L3UaOnt'
+gc1 = 'https://chat.whatsapp.com/Jxe836o7w9L9EhaYPkyZdV'
 gc2 = ''
 gc3 = ''
 global.linkGC = ['https://chat.whats', 'https://chat.whatsap'] // ganti jadi group lu
