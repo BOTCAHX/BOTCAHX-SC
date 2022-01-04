@@ -57,10 +57,10 @@ global.packname = 'BOTCAHBOTz' // ganti aja
 global.author = 'BOTCAHBOTz' // ganti aja
 
 //yyy
-bc = 'RFK' //xBOTZ Broadcast
-footer = '\n©xBOTZ'
-namabot = 'xBOTZ'
-namalu = 'xBOTZ'
+bc = 'RFK' //BOTCAHBOTz Broadcast
+footer = '\n©BOTCAHBOTz'
+namabot = 'BOTCAHBOTz'
+namalu = 'BOTCAHBOTz'
 
 
 // 
