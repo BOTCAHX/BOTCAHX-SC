@@ -21,14 +21,14 @@
   ],
   "homepage": "https://github.com/Andriiwalker/wabot-aq",
   "author": {
-    "name": "Andrii Street Moonshine"
+    "name": "Tio Permana"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Andriiwalker/wabot-aq.git"
   },
   "bugs": {
-    "url": "https://github.com/Andriiwalker/wabot-aq/issues"
+    "url": "https://github.com/BOTCAHX/inirecode/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
