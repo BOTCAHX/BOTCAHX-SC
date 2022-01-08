@@ -48,7 +48,7 @@ ${gc3}
 
 
  ©2021 ${namabot}
- Script original by
+ Script original by Tio
  
  
 ═〘 ${namabot} 〙 ═
