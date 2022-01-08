@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
 ╠➥ *1 Bulan* :      *Rp 15000*
 ╠➥ *Permanen* : *Rp 25000*
 ╠➥ *Premium* :   *Rp 10000*
-╠➥ *Sc Bot* :        *Masih Beta*
+╠➥ *Sc Bot* :        *Beli*
 ║
 ╠═〘 PEMBAYARAN 〙 ═
 ╠➥ Gopay, Dana, Dan Pulsa
@@ -13,7 +13,7 @@ let handler = async (m, { conn }) => {
 ╠➥Ketuk Tombol Di Bawah Ya
 ║
 ╠═ ©2021 Rpg wabot-aq
-╠═ Scrip original by 
+╠═ Scrip original by Tio
 ╠═〘 ${namabot} 〙 ═`.trim(), footer, 'Dana', '#viadana', 'OVO', '#viaovo', 'Pulsa', '#viapulsa', m)
 }
 
