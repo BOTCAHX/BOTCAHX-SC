@@ -25,8 +25,6 @@ const defaultMenu = {
 ┃
 ┃⬡ Uptime: *%uptime (%muptime)*
 ┃⬡ Database: %rtotalreg dari %totalreg
-┃⬡ Github:
-┃⬡ 
 ┃
 ┗━━━━━━⬣`.trimStart(),
   header: '┏━━〔 %category 〕━⬣',
@@ -243,11 +241,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬡ Group Official 1 :
 ┃    ${gc1}
 ┃
-┃⬡ Group Official 2 :
-┃    ${gc2}
-┃
-┃⬡ Group Official 3 :
-┃    ${gc3}
 ┃
 ┃
 ┗━━━━━━━━⬣`.trim(),
