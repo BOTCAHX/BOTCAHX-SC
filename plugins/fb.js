@@ -1,20 +1,23 @@
-const fetch = require('node-fetch')
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `uhm.. url nya mana?\n\ncontoh:\n${usedPrefix + command} https://www.facebook.com/alanwalkermusic/videos/277641643524720`
-  if (/^https?:\/\/.*(fb.watch|facebook.com)/i.test(m.text)) throw `url salah`
 
-  let res = await fetch(API('neoxr', '/api/download/fb', { url: args[0] }, 'apikey'))
-  if (!res.ok) throw eror
-  let json = await res.json()
-  if (!json.status) throw json
-  await m.reply(wait)
-  await conn.sendFile(m.chat, json.data.sd.url, '', `HD: ${json.data.hd.url}\nUkuran: ${json.data.hd.size}\n\n© stikerin`, m)
+const { fbdl } = require('../../Lib/fbdl')
+
+module.exports = {
+name: ["fb"],
+type: ["download"],
+useLimit: true,
+description: "download video from facebook url",
+utilisation: userbot.prefix + "fb (url)",
+
+async execute(m) {
+let { conn, args } = data
+
+try {
+if (!args[0]) return m.reply('urlnya mana')
+if (!args[0].includes("facebook")) return m.reply('url is wrong')
+ const v = await fbdl(args[0])
+ conn.sendFile(m.chat, v.hasil.link_high, 'fb.mp4', `\n*Berhasil Mendapatkan Video*\n\n⬇️Post by ${v.hasil.author}\n📖desk: ${v.hasil.title}`, m)
+} catch (e) {
+console.log('error Banh')
 }
-handler.help = ['fb'].map(v => v + ' <url>')
-handler.tags = ['downloader']
-
-handler.command = /^f((b|acebook)(dl|download)?(er)?)$/i
-
-handler.limit = true
-
-module.exports = handler
+}
+}
