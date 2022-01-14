@@ -22,7 +22,7 @@ let handler = async (m, { conn }) => {
 ╠➥ *DAN 200 LEBIH*
 ║   *FITUR LAINNYA*
 ║ 
-╠═ ©2021 Rpg wabot-aq
+╠═ ©2021
 ╠═ Scrip original by Tio
 ╠═〘 ${namabot} 〙 ═`.trim(), m)
 }
