@@ -20,7 +20,6 @@ let handler  = async (m, { conn, usedPrefix }) => {
 
 ➥ Kami tidak bertanggung jawab atas kebocoran data pribadi anda
 
-
 ➥ ${namabot} Versi ${package.version}
 ➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
 ➥ *Issue:* ${package.bugs.url}
@@ -32,7 +31,6 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ➥ Pulsa : 082221792667
 ➥ Dana & OVO: 082221792667
 
-
 ➥ Request? ${package.bugs.url}
 
 Official Grup :
@@ -40,16 +38,8 @@ Official Grup :
 Grup 1 :
 ${gc1}
 
-Grup 2 :
-${gc2}
-
-Grup 3 :
-${gc3}
-
-
  ©2021 ${namabot}
- Script original by Tio
- 
+ Script original by BOTCAHX
  
 ═〘 ${namabot} 〙 ═
 `.trim(), m)
