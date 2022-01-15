@@ -1,6 +1,6 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 ye = `@${m.sender.split`@`[0]}`
-let info = `Hai Kak ${ye} Minta-minta Mulu Perasaan:v
+let info = `Hai Kak ${ye} Sc ini di private nih hehe:)
 Mending Donasi Aja :082221792667
 Group Bot
 ${gc1}
