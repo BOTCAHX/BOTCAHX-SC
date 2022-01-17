@@ -18,10 +18,6 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 BOT STATUS 〙 ═
- *Hari :* *%week %weton* 
- *Tanggal :* *%date*
- *Tanggal Islam :* *%dateIslamic*
- *Waktu:* *%time*
 ➥ ${namabot} Versi ${package.version}
 ➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
 ➥ *Issue:* ${package.bugs.url}
@@ -33,7 +29,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🔖 *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 🔖 *${conn.blocklist.length}* Terblock
 🔖 *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-🔖 Request? ${package.bugs.url}
+➥ Request? ${package.bugs.url}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 DONASI 〙 ═
 🔖 Pulsa : 082221792667
