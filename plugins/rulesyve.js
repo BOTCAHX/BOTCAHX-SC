@@ -11,33 +11,29 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
 ═〘 Rules ${namabot} 〙═
-
-🔖 Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam
-
-🔖 Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot
-
-🔖 Kami tidak bertanggung jawab atas penyalahgunaan bot
-
-🔖 Kami tidak bertanggung jawab atas kebocoran data pribadi anda
-
-🔖 ${namabot} Versi ${package.version}
-🔖 *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
-🔖 *Issue:* ${package.bugs.url}
-🔖 *Ping:* ${neww - old} *ms*
-🔖 *Total user:* ${totalreg} *user*
-🔖 *Uptime:* ${uptime}
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔖 _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
+🔖 _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
+🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
+🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+➥ ${namabot} Versi ${package.version}
+➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
+➥ *Issue:* ${package.bugs.url}
+➥ *Ping:* ${neww - old} *ms*
+➥ *Total user:* ${totalreg} *user*
+➥ *Uptime:* ${uptime}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 DONASI 〙 ═
 🔖 Pulsa : 082221792667
 🔖 Dana : 082221792667
 🔖 Request? ${package.bugs.url}
-Official Grup :
-Grup 1 :
-${gc1}
-
+🔖 Official Grup :
+➥Grup 1 :
+➥${gc1}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  ©2021 ${namabot}
  Script original by BOTCAHX
- 
 ═〘 ${namabot} 〙 ═
 `.trim(), m)
 }
