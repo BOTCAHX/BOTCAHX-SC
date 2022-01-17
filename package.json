@@ -19,16 +19,16 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/BOTCAHX/inirecode",
+  "homepage": "https://github.com/BOTCAHX/BOTCAHXtm",
   "author": {
     "name": "Tio Permana"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BOTCAHX/inirecode.git"
+    "url": "git+https://github.com/BOTCAHX/BOTCAHXtm.git"
   },
   "bugs": {
-    "url": "https://github.com/BOTCAHX/inirecode/issues"
+    "url": "https://github.com/BOTCAHX/BOTCAHXtm/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
