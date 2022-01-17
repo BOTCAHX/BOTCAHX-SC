@@ -1,13 +1,13 @@
-let Booru = require('booru')
-
-let handler = async(m, { conn }) => {
-m.reply('Loading...')
-let img = await Booru.search('kn', ['loli'], { random: true })
-img = img[0].data
-await conn.sendFile(m.chat, img.file_url, '', '', m)
+let handler = async (m, { conn }) => {
+  let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+  conn.sendFile(m.chat, global.API('https://some-random-api.ml', '/canvas/lolice', {
+    avatar: await conn.getProfilePicture(who).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'),
+  }), 'lolice.png', 'menu nya eror pake ini aja ya', m)
 }
-handler.help = ['loli']
-handler.tags = ['anime']
-handler.command = /^(loli)$/i
+
+handler.help = ['lolice']
+handler.tags = ['maker']
+
+handler.command = /^(lolice)$/i
 
 module.exports = handler
