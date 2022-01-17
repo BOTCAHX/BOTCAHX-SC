@@ -23,6 +23,13 @@ npm update
 ```
 ---------
 
+TERMUX
+
+git clone https://github.com/Dawnfrosty/Mike-bot
+cd Mike-bot
+npm install
+npm update
+
 ## FOR WINDOWS/VPS/RDP USER
 
 * Download And Install Git [`Click Here`](https://git-scm.com/downloads)
