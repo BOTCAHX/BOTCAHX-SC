@@ -1,13 +1,24 @@
-let axios = require('axios')
-
-let handler = async (m, { conn, usedPrefix, command }) => {
-    let res = await axios.get(API('amel', '/husbu', {}, 'apikey'))
-
-    let json = res.data
-    conn.sendButtonImg(m.chat, json.url, json.nama, wm, 'husbu again', `${usedPrefix + command}`, m)
+let fetch = require('node-fetch')
+let handler  = async (m, { conn, usedPrefix, command }) => {
+m.reply(wait)
+heum = await fetch(`https://api.lolhuman.xyz/api/random/husbu?apikey=${lolkey}`)
+json = await heum.buffer()
+// conn.sendFile(m.chat, json, 'loli.jpg', 'Lomlinya kak', m, false)
+conn.sendButtonImg(m.chat, json, kasihcaption, footer, 'NEXT', `${usedPrefix + command}`, m)
+//sendButtonImg(jid, content, url, footer, button1, row1, options = {}) {
 }
 handler.help = ['husbu']
-handler.tags = ['fun']
-handler.command = /^(husbu)$/i
+handler.tags = ['anime']
+handler.command = /^husbu$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
 
 module.exports = handler
