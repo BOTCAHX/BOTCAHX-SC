@@ -1,18 +1,17 @@
-let fs = require('fs')
 let handler = async (m, { conn, text }) => {
 
-    const json = JSON.parse(fs.readFileSync('./src/premium.json'))
     let who
-    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-    else who = text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.chat
-    if (json.includes(who)) throw `@${who.split`@`[0]} belum premium!`
-    let index = json.findIndex(v => (v.replace(/[^0-9]/g, '') + '@s.whatsapp.net') === (who.replace(/[^0-9]/g, '') + '@s.whatsapp.net'))
-    json.splice(index, 1)
-    fs.writeFileSync('./src/premium.json', JSON.stringify(json))
-    m.reply(`@${who.split`@`[0]} sekarang bukan premium!`)
-
-    delete require.cache[require.resolve('../config')]
-    require('../config')
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
+    else who = m.chat
+    if (!who) throw `tag the person!`
+    if (!global.prems.includes(who.split`@`[0])) throw 'dia bukan premium!'
+    let index = global.prems.findIndex(v => (v.replace(/[^0-9]/g, '') + '@s.whatsapp.net') === (who.replace(/[^0-9]/g, '') + '@s.whatsapp.net'))
+    global.prems.splice(index, 1)
+    conn.reply(m.chat, `@${who.split('@')[0]} sekarang bukan premium!`, m, {
+        contextInfo: {
+            mentionedJid: [who]
+        }
+    })
 
 }
 handler.help = ['delprem [@user]']
