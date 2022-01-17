@@ -1,13 +1,13 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn }) => {
-  let res = await fetch('https://api.xteam.xyz/randomimage/husbu?APIKEY=MahliKey')
-  if (!res.ok) throw await res.text()
-  let json = await res.json()
-  if (!json.url) throw 'Error!'
-  conn.sendFile(m.chat, json.url, '', 'husboo', m, 0, { thumbnail: Buffer.alloc(0) })
+let axios = require('axios')
+
+let handler = async (m, { conn, usedPrefix, command }) => {
+    let res = await axios.get(API('amel', '/husbu', {}, 'apikey'))
+
+    let json = res.data
+    conn.sendButtonImg(m.chat, json.url, json.nama, wm, 'husbu again', `${usedPrefix + command}`, m)
 }
 handler.help = ['husbu']
-handler.tags = ['anime']
+handler.tags = ['fun']
 handler.command = /^(husbu)$/i
 
 module.exports = handler
