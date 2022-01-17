@@ -1,13 +1,13 @@
-let handler = async (m, { conn }) => {
-  let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-  conn.sendFile(m.chat, global.API('https://some-random-api.ml', '/canvas/lolice', {
-    avatar: await conn.getProfilePicture(who).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'),
-  }), 'lolice.png', 'case by wa.me/6282221792667', m)
+let Booru = require('booru')
+
+let handler = async(m, { conn }) => {
+m.reply('Loading...')
+let img = await Booru.search('kn', ['loli'], { random: true })
+img = img[0].data
+await conn.sendFile(m.chat, img.file_url, '', '', m)
 }
-
-handler.help = ['lolice']
-handler.tags = ['maker']
-
+handler.help = ['loli']
+handler.tags = ['anime']
 handler.command = /^(loli)$/i
 
 module.exports = handler
