@@ -35,8 +35,8 @@ ${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
-	let bzz = fs.readFileSync('./vn/ara-nabila.mp3')
-	let bzz2 = fs.readFileSync('./vn/onichan.mp3')
+	let bzz = fs.readFileSync('./vn/')
+	let bzz2 = fs.readFileSync('./vn/')
 	let { anon, anticall, antispam, antitroli, backup, jadibot, groupOnly, nsfw } = global.db.data.settings[conn.user.jid]
     let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
 
