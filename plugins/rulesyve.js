@@ -17,12 +17,14 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+═ 〘 BOT STATUS 〙 ═
 ➥ ${namabot} Versi ${package.version}
 ➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
 ➥ *Issue:* ${package.bugs.url}
 ➥ *Ping:* ${neww - old} *ms*
 ➥ *Total user:* ${totalreg} *user*
 ➥ *Uptime:* ${uptime}
+➥ *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 DONASI 〙 ═
 🔖 Pulsa : 082221792667
