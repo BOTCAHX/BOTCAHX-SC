@@ -5,9 +5,9 @@ let handler = async (m, { conn }) => {
   }), 'lolice.png', 'case by wa.me/6282221792667', m)
 }
 
-handler.help = ['loli']
+handler.help = ['lolice']
 handler.tags = ['maker']
 
-handler.command = /^(lolice)$/i
+handler.command = /^(loli)$/i
 
 module.exports = handler
