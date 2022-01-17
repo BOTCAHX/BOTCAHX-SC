@@ -12,29 +12,26 @@ let handler  = async (m, { conn, usedPrefix }) => {
   conn.reply(m.chat, `
 ═〘 Rules ${namabot} 〙═
 
-➥ Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam
+🔖 Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam
 
-➥ Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot
+🔖 Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot
 
-➥ Kami tidak bertanggung jawab atas penyalahgunaan bot
+🔖 Kami tidak bertanggung jawab atas penyalahgunaan bot
 
-➥ Kami tidak bertanggung jawab atas kebocoran data pribadi anda
+🔖 Kami tidak bertanggung jawab atas kebocoran data pribadi anda
 
-➥ ${namabot} Versi ${package.version}
-➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
-➥ *Issue:* ${package.bugs.url}
-➥ *Ping:* ${neww - old} *ms*
-➥ *Total user:* ${totalreg} *user*
-➥ *Uptime:* ${uptime}
+🔖 ${namabot} Versi ${package.version}
+🔖 *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
+🔖 *Issue:* ${package.bugs.url}
+🔖 *Ping:* ${neww - old} *ms*
+🔖 *Total user:* ${totalreg} *user*
+🔖 *Uptime:* ${uptime}
 
 ═ 〘 DONASI 〙 ═
-➥ Pulsa : 082221792667
-➥ Dana & OVO: 082221792667
-
-➥ Request? ${package.bugs.url}
-
+🔖 Pulsa : 082221792667
+🔖 Dana : 082221792667
+🔖 Request? ${package.bugs.url}
 Official Grup :
-
 Grup 1 :
 ${gc1}
 
