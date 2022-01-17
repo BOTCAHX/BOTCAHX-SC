@@ -30,7 +30,6 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ➥ *Uptime:* ${uptime}
 ➥ *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
 ➥ *Aktif selama:* ${uptime}
-🔖 *${totaljadibot.length}* Jadibot
 🔖 *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 🔖 *${conn.blocklist.length}* Terblock
 🔖 *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
