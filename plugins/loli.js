@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
   }), 'lolice.png', 'liuliuliuliuliu we heard that there is a lolicon here', m)
 }
 
-handler.help = ['lolice']
+handler.help = ['loli']
 handler.tags = ['maker']
 
 handler.command = /^(lolice)$/i
