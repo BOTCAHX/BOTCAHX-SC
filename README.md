@@ -6,7 +6,7 @@ Heroku Buildpack
 | **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
 | **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
-Tutorial YouTube
+
 
 ## FOR TERMUX/UBUNTU/SSH USER
 
