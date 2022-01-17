@@ -60,7 +60,7 @@ global.author = 'BOTCAHBOTz' // ganti aja
 bc = 'RFK' //BOTCAHBOTz Broadcast
 footer = '\n©BOTCAHBOTz'
 namabot = 'BOTCAHBOTz'
-namalu = 'BOTCAHBOTz'
+namalu = 'Tio'
 
 
 // 
