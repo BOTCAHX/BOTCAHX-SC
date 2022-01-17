@@ -1,23 +1,13 @@
-let fetch = require('node-fetch')
-     let handler  = async (m, { conn, usedPrefix, command }) => {
-m.reply(wait)
-heum = await fetch(`https://api.lolhuman.xyz/api/random/loli?apikey=${lolkey}`)
-    json = await heum.buffer()
-   conn.sendButtonImg(m.chat, json, kasihcaption, footer, 'Next', `${usedPrefix + command}`, m, { contextInfo: { forwardingScore: 999, isForwarded: true }})
-
+let handler = async (m, { conn }) => {
+  let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+  conn.sendFile(m.chat, global.API('https://some-random-api.ml', '/canvas/lolice', {
+    avatar: await conn.getProfilePicture(who).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'),
+  }), 'lolice.png', 'liuliuliuliuliu we heard that there is a lolicon here', m)
 }
-handler.help = ['loli']
-handler.tags = ['anime']
-handler.command = /^loli$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
 
-handler.admin = false
-handler.botAdmin = false
+handler.help = ['lolice']
+handler.tags = ['maker']
 
-handler.fail = null
+handler.command = /^(lolice)$/i
 
 module.exports = handler
