@@ -1,15 +1,22 @@
-let fetch = require("node-fetch")
-
-let handler = async (m, { conn }) => {
-  let res = await fetch(global.API('LeysCoder', '/api/ppcouple', {}, 'apikey'))
-  if (!res.ok) throw await res.text()
-  let json = await res.json()
-  if (!json.status) throw json
-  await conn.sendFile(m.chat, json.result.male, '', 'error', m)
-  await conn.sendFile(m.chat, json.result.female, '', 'error', m)
+let fetch = require('node-fetch')
+async function getRandom(url) {
+return Math.floor(Math.random() * url)
 }
-handler.help = ['loli']
-handler.tags = ['anime']
-handler.command = /^(loli(loli|loli))$/i
+let handler  = async (m, { conn }) => {
+m.reply(wait)
+conn.sendFile(m.chat, `https://recoders-area.caliph.repl.co/api/lolivid`, '', ``, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
+
+}
+handler.help = ['lolivid']
+handler.tags = ['video']
+handler.command = /^(loli|loliv)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+handler.admin = false
+handler.botAdmin = false
+handler.fail = null
 
 module.exports = handler
