@@ -1,13 +1,13 @@
-let handler = async (m, { conn }) => {
-  let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-  conn.sendFile(m.chat, global.API('https://some-random-api.ml', '/canvas/lolice', {
-    avatar: await conn.getProfilePicture(who).catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png'),
-  }), 'lolice.png', 'menu nya eror pake ini aja ya', m)
-}
+let scrap = require("../lib/scraper_pinterest")
+let fetch = require('node-fetch')
 
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+	scrap.pinterest("loli","loli kawai","loli sagiri","anime loli","loli cat").then(a => a[Math.floor(Math.random() * a.length)]).then(b => conn.sendFile(m.chat,b,b,"Done",m))
+   }
+    
 handler.help = ['loli']
-handler.tags = ['maker']
-
+handler.tags = ['internet']
 handler.command = /^(loli)$/i
+handler.limit = true
 
 module.exports = handler
