@@ -2,6 +2,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 ye = `@${m.sender.split`@`[0]}`
 let info = `Hai Kak ${ye} Sc ini di private nih hehe:)
 Mending Donasi Aja :082221792667
+🔖 My website : https://tioprm.herokuapp.com/
 Group Bot
 ${gc1}
 `.trim()
