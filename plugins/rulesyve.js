@@ -16,6 +16,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🔖 _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
 🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
+🔖 _Webesite Official Bot_  https://tioprm.herokuapp.com/
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 BOT STATUS 〙 ═
 ➥ ${namabot} Versi ${package.version}
