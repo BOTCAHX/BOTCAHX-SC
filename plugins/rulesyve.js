@@ -17,6 +17,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
 🔖 _Webesite Official Bot_  https://tioprm.herokuapp.com/
+🔖 _Instagram_ https://instagram.com/prm2.0?utm_medium=copy_link
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 BOT STATUS 〙 ═
 ➥ ${namabot} Versi ${package.version}
