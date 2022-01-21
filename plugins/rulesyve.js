@@ -12,8 +12,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
   conn.reply(m.chat, `
 ═〘 Rules ${namabot} 〙═
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-═〘 Website Download 〙═
-🔖 _*Gunaakan Link Ini Untuk Mendownload Tiktok WM dan no WM Karen fitur bot Terkaadang ERROR*_
+═ Website Download ═
+💠 _Gunaakan Link Ini Untuk Mendownload Tiktok WM dan no WM Karen fitur bot Terkaadang ERROR_
 🔖 _Download Tiktok Dengan WM_ : https://tioprm.herokuapp.com/
 🔖 _Download Tiktok Tanpa WM_ : https://tiodownloaders.herokuapp.com/
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
