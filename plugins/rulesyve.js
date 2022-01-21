@@ -13,15 +13,16 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ═〘 Rules ${namabot} 〙═
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ Website Download ═
-💠 _Gunakan Link Ini Untuk Mendownload Tiktok WM dan no WM Karen fitur bot Terkaadang ERROR_
+💠 _Gunakan Link Ini Untuk Mendownload Tiktok WM dan no WM Karena fitur bot Terkadang ERROR_
 🔖 _Download Tiktok Dengan WM_ : https://tioprm.herokuapp.com/
 🔖 _Download Tiktok Tanpa WM_ : https://tiodownloaders.herokuapp.com/
+💠 *Update:* ${uptime}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🔖 _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
 🔖 _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
 🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
-🔖 _Instagram_ https://instagram.com/prm2.0?utm_medium=copy_link
+🔖 _Instagram Owner_ https://instagram.com/prm2.0?utm_medium=copy_link
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 BOT STATUS 〙 ═
 ➥ ${namabot} Versi ${package.version}
@@ -40,9 +41,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ═ 〘 DONASI 〙 ═
 🔖 Pulsa : 082221792667
 🔖 Dana : 082221792667
-🔖 Official Grup :
-➥Grup 1 :
-➥${gc1}
+🔖 Official Grup Bot
+➥Grup Official :
+🗨️${gc1}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  ©2021 ${namabot}
  Script original by BOTCAHX
