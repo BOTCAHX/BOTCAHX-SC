@@ -228,7 +228,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-┏━━〔 Status 〕━⬣
+┏━━〔 𝘚𝘵𝘢𝘵𝘶𝘴〕━⬣
 ┃⬡ 𝘈𝘬𝘵𝘪𝘧 𝘴𝘦𝘭𝘢𝘮𝘢 ${uptime}
 ┃⬡ 𝘉𝘢𝘵𝘦𝘳𝘢𝘪 ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 𝘱𝘦𝘯𝘨𝘪𝘴𝘪𝘢𝘯' : ''}` : '𝘵𝘪𝘥𝘢𝘬 𝘥𝘪𝘬𝘦𝘵𝘢𝘩𝘶𝘪'}
 ┃⬡ *${Object.keys(global.db.data.users).length}* 𝘗𝘦𝘯𝘨𝘨𝘶𝘯𝘢
@@ -472,18 +472,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari"
+  res = "𝘚𝘦𝘭𝘢𝘮𝘢𝘵 𝘥𝘪𝘯𝘪𝘩𝘢𝘳𝘪"
   if (time >= 4) {
-    res = "Selamat pagi"
+    res = "𝘚𝘦𝘭𝘢𝘮𝘢𝘵 𝘱𝘢𝘨𝘪"
   }
   if (time > 10) {
-    res = "Selamat siang"
+    res = "𝘚𝘦𝘭𝘢𝘮𝘢𝘵 𝘴𝘪𝘢𝘯𝘨"
   }
   if (time >= 15) {
-    res = "Selamat sore"
+    res = "𝘚𝘦𝘭𝘢𝘮𝘢𝘵 𝘴𝘰𝘳𝘦"
   }
   if (time >= 18) {
-    res = "Selamat malam"
+    res = "𝘚𝘦𝘭𝘢𝘮𝘢𝘵 𝘮𝘢𝘭𝘢𝘮"
   }
   return res
 }
