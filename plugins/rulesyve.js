@@ -13,9 +13,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ═〘 Rules ${namabot} 〙═
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═〘 Website Download 〙═
-➥Gunaakan Link Ini Untuk Mendownload Tiktok WM dan no WM Karen fitur bot Terkaadang ERROR
-🔖 ═〘 Download Tiktok Dengan WM 〙═ : https://tioprm.herokuapp.com/
-🔖 ═〘 Download Tiktok Tanpa WM 〙═ : https://tiodownloaders.herokuapp.com/
+🔖 _*Gunaakan Link Ini Untuk Mendownload Tiktok WM dan no WM Karen fitur bot Terkaadang ERROR*_
+🔖 _Download Tiktok Dengan WM_ : https://tioprm.herokuapp.com/
+🔖 _Download Tiktok Tanpa WM_ : https://tiodownloaders.herokuapp.com/
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🔖 _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
 🔖 _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
