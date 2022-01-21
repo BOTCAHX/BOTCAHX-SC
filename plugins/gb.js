@@ -1,8 +1,10 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 ye = `@${m.sender.split`@`[0]}`
-let info = `Hai Kak ${ye} Sc ini di private nih hehe:)
-Mending Donasi Aja :082221792667
-🔖 My website : https://tioprm.herokuapp.com/
+let info = `Hai Kak ${ye} Kunjungi Website Download  Video Tiktok Kami
+Karena terkadang fitur di bot sering erorr 
+Donasi Bot via Dana:082221792667
+🔖 Download Tiktok dengan WM : https://tioprm.herokuapp.com/
+🔖 Download Tiktok Tanpa WM : https://tiodownloaders.herokuapp.com/
 Group Bot
 ${gc1}
 `.trim()
