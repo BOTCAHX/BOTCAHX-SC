@@ -22,7 +22,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🔖 _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
 🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
-🔖 _Instagram Owner_ https://instagram.com/prm2.0?utm_medium=copy_link
+🔖 _Instagram Owner_ : https://instagram.com/prm2.0?utm_medium=copy_link
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 BOT STATUS 〙 ═
 ➥ ${namabot} Versi ${package.version}
@@ -41,9 +41,9 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ═ 〘 DONASI 〙 ═
 🔖 Pulsa : 082221792667
 🔖 Dana : 082221792667
-🔖 Official Grup Bot
-➥Grup Official :
-🗨️${gc1}
+🔖 Official Grup Whatsapp:
+💠 Grup Official :
+🔖 ${gc1}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  ©2021 ${namabot}
  Script original by BOTCAHX
