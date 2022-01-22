@@ -227,15 +227,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
 ┏━━〔 𝘚𝘵𝘢𝘵𝘶𝘴〕━⬣
-┃⬡ 𝘈𝘬𝘵𝘪𝘧 𝘴𝘦𝘭𝘢𝘮𝘢 ${uptime}
-┃⬡ 𝘉𝘢𝘵𝘦𝘳𝘢𝘪 ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 𝘱𝘦𝘯𝘨𝘪𝘴𝘪𝘢𝘯' : ''}` : '𝘵𝘪𝘥𝘢𝘬 𝘥𝘪𝘬𝘦𝘵𝘢𝘩𝘶𝘪'}
-┃⬡ *${Object.keys(global.db.data.users).length}* 𝘗𝘦𝘯𝘨𝘨𝘶𝘯𝘢
-┃⬡ *${totaljadibot.length}* 𝘑𝘢𝘥𝘪𝘣𝘰𝘵
-┃⬡ *${conn.blocklist.length}* 𝘛𝘦𝘳𝘣𝘭𝘰𝘤𝘬
-┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* 𝘊𝘩𝘢𝘵 𝘛𝘦𝘳𝘣𝘢𝘯𝘯𝘦𝘥
-┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* 𝘗𝘦𝘯𝘨𝘨𝘶𝘯𝘢 𝘛𝘦𝘳𝘣𝘢𝘯𝘯𝘦𝘥
+┃⬡ Aktif selama ${uptime}
+┃⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+┃⬡ *${Object.keys(global.db.data.users).length}* Pengguna
+┃⬡ *${totaljadibot.length}* Jadibot
+┃⬡ *${conn.blocklist.length}* Terblock
+┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┃⬡ Ram ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ┗━━━━━━━━⬣`.trim(),
-          "buttonText": "𝙈𝙚𝙣𝙪",
+          "buttonText": "List Menu 📑",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
