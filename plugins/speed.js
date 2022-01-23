@@ -57,6 +57,9 @@ ${'```' + `
 ${util.format(conn.user.phone)}
 `.trim() + '```'}
 
+*Informasi Bot* :
+RAM Bot: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+
 💻 *Server Info* :
 RAM: ${format(os.totalmem() - os.freemem())} / ${format(os.totalmem())}
 
