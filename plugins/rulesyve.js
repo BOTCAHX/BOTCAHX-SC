@@ -16,7 +16,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🔖 _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
 🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
-🔖 _ Follow IG Owner_ : https://instagram.com/prm2.0?utm_medium=copy_link
+🔖 _Follow IG Owner_ : https://instagram.com/prm2.0?utm_medium=copy_link
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 BOT STATUS 〙 ═
 ⋡ ${namabot} Versi ${package.version}
