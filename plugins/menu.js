@@ -1,4 +1,3 @@
-
 let levelling = require('../lib/levelling')
 let { MessageType } = require('@adiwajshing/baileys')
 let fs = require('fs')
@@ -26,9 +25,7 @@ const defaultMenu = {
 ┃
 ┃⬡ Uptime: *%uptime (%muptime)*
 ┃⬡ Database: %rtotalreg dari %totalreg
-┃⬡ Github:
-┃⬡ Github.com/Andriiwalker
-┃
+┃⬡ Memory Bot ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ┗━━━━━━⬣`.trimStart(),
   header: '┏━━〔 %category 〕━⬣',
   body: '┃⬡%cmd %islimit %isPremium',
@@ -39,8 +36,6 @@ ${'```%npmdesc```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
-	let bzz = fs.readFileSync('./vn/ara-nabila.mp3')
-	let bzz2 = fs.readFileSync('./vn/onichan.mp3')
 	let { anon, anticall, antispam, antitroli, backup, jadibot, groupOnly, nsfw } = global.db.data.settings[conn.user.jid]
     let totaljadibot = [...new Set([...global.conns.filter(conn => conn.user && conn.state !== 'close').map(conn => conn.user)])]
 
@@ -232,30 +227,21 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-┏━━〔 Status 〕━⬣
-┃⬡ Aktif selama ${uptime}
-┃⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-┃⬡ *${Object.keys(global.db.data.users).length}* Pengguna
-┃⬡ *${totaljadibot.length}* Jadibot
-┃⬡ *${conn.blocklist.length}* Terblock
-┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-┃
-┃⬡ Group Official 1 :
-┃    ${gc1}
-┃
-┃⬡ Group Official 2 :
-┃    ${gc2}
-┃
-┃⬡ Group Official 3 :
-┃    ${gc3}
-┃
-┃
-┗━━━━━━━━⬣`.trim(),
-          "buttonText": "Klik Disini",
+┏❏━〔 𝘚𝘵𝘢𝘵𝘶𝘴 〕━✇
+┃⚘ Aktif selama ${uptime}
+┃⚘ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+┃⚘ *${Object.keys(global.db.data.users).length}* Pengguna
+┃⚘ *${totaljadibot.length}* Jadibot
+┃⚘ *${conn.blocklist.length}* Terblock
+┃⚘ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+┃⚘ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┃⚘ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+┗❏━━━━━━━✇`.trim(),
+          "buttonText": "List Menu 📑",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
+            "title": `${ucapan()} - Silahkan Pilih Menu`,
               "rows": [
                 {
                   "title": `[🧾] Semua Perintah`,
@@ -463,8 +449,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
     // await conn.send3ButtonLoc(m.chat, await (await fetch(`https://i.ibb.co/fH0hppT/mikey.jpg`)).buffer(), text.trim(), 'Recoded By Dawnfrosty', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
-    await conn.sendFile(m.chat, bzz, 'bzz.opus', null, m, true)
-    await conn.sendFile(m.chat, bzz2, 'bzz2.opus', null, m, true)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
