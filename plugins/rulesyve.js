@@ -12,43 +12,44 @@ let handler  = async (m, { conn, usedPrefix }) => {
   conn.reply(m.chat, `
 ═〘 Rules ${namabot} 〙═
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-═ Website Download ═
-💠 _Gunakan Link Ini Untuk Mendownload Tiktok WM dan no WM Karena fitur bot Terkadang ERROR_
-🔖 _Download Tiktok Dengan WM_ : https://tioprm.herokuapp.com/
-🔖 _Download Tiktok Tanpa WM_ : https://tiodownloaders.herokuapp.com/
-💠 *Update:* ${uptime}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🔖 _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
 🔖 _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
 🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
-🔖 _Instagram Owner_ : https://instagram.com/prm2.0?utm_medium=copy_link
+🔖 _ Follow IG Owner_ : https://instagram.com/prm2.0?utm_medium=copy_link
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 BOT STATUS 〙 ═
-➥ ${namabot} Versi ${package.version}
-➥ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
-➥ *Issue:* ${package.bugs.url}
-➥ *Ping:* ${neww - old} *ms*
-➥ *Total user:* ${totalreg} *user*
-➥ *Uptime:* ${uptime}
-➥ *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-➥ *Aktif selama:* ${uptime}
-🔖 *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-🔖 *${conn.blocklist.length}* Terblock
-🔖 *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-➥ Request? ${package.bugs.url}
+⋡ ${namabot} Versi ${package.version}
+⋡ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
+⋡ *Issue:* ${package.bugs.url}
+⋡ *Ping:* ${neww - old} *ms*
+⋡ *Total user:* ${totalreg} *user*
+⋡ *Uptime:* ${uptime}
+⋡ *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+⋡ *Aktif selama:* ${uptime}
+⋡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+⋡ *${conn.blocklist.length}* Terblock
+⋡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+⋡ *Request?* ${package.bugs.url}
+⋡ *Memory Perangkat* *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)MB
+⋡ *${totaljadibot.length}* Jadibot
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 DONASI 〙 ═
-🔖 Pulsa : 082221792667
-🔖 Dana : 082221792667
-🔖 Official Grup Whatsapp:
-💠 Grup Official :
-🔖 ${gc1}
+⋡ Pulsa : 082221792667
+⋡ Dana : 082221792667
+*⋡Website Bot⋡*
+⋡ https://tioprm.herokuapp.com/
+⋡ https://tiodownloaders.herokuapp.com/
+⋡ *Official Grup Whatsapp* :
+⋡ *Grup Official* :
+⋡ ${gc1}
+⋡ *Terima Kasih ${ucapan()}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- ©2021 ${namabot}
- Script original by BOTCAHX
+©2021 ${namabot}
+⋡Script original by BOTCAHX
 ═〘 ${namabot} 〙 ═
-`.trim(), m)
+
+.trim(), m)
 }
 
 handler.help = ['main']
