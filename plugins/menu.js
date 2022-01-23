@@ -448,7 +448,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
-    await conn.send3ButtonLoc(m.chat, await (await fetch(https://i.ibb.co/NpX1j11/donasi.jpg`)).buffer(), text.trim(), 'BOTCAHBOTz', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
+    //await conn.send3ButtonLoc(m.chat, await (await fetch(https://i.ibb.co/NpX1j11/donasi.jpg`)).buffer(), text.trim(), 'BOTCAHBOTz', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
