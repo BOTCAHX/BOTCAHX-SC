@@ -244,7 +244,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
             "title": `${ucapan()} - By Tio`,
               "rows": [
                 {
-                  "title": `[All] Semua Perintah`,
+                  "title": `Semua Perintah`,
                   "description": "Memberikan Semua Fitur Bot",
                   "rowId": ".? all"
                 }, {
