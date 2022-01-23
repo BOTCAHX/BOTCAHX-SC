@@ -240,7 +240,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-	    "title": `${ucapanWaktu} - ${time}`,
+	    "title": `${ucapan()}, ${name}`,
               "rows": [
                 {
                   "title": `[🧾] Semua Perintah`,
