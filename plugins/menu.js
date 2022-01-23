@@ -227,21 +227,21 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-╭─ *〘Status〙* ❒
-├ Aktif selama ${uptime}
-├ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-├ *${Object.keys(global.db.data.users).length}* Pengguna
-├ *${totaljadibot.length}* Jadibot
-├ *${conn.blocklist.length}* Terblock
-├ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-├ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-├ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB 
-╰──────────❒`.trim(),
-          "buttonText": "𝐋𝐢𝐬𝐭 𝐦𝐞𝐧𝐮 📑",
+╭───── *〘Status〙* ◨
+│⋡ Aktif selama ${uptime}
+│⋡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+│⋡ *${Object.keys(global.db.data.users).length}* Pengguna
+│⋡ *${totaljadibot.length}* Jadibot
+│⋡ *${conn.blocklist.length}* Terblock
+│⋡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+│⋡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+│⋡ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB ↻ / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺ 
+╰──────────◨`.trim(),
+          "buttonText": "Menu ⥹",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `${ucapan()} -  𝐁𝐲 𝐓𝐢𝐨𝐱𝐃`,
+            "title": `${ucapan()} - By Tio`,
               "rows": [
                 {
                   "title": `[All] Semua Perintah`,
