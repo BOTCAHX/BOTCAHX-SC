@@ -57,7 +57,7 @@ global.packname = 'BOTCAHBOTz' // ganti aja
 global.author = 'BOTCAHBOTz' // ganti aja
 
 //yyy
-bc = 'RFK' //BOTCAHBOTz Broadcast
+bc = 'BCH' //BOTCAHBOTz Broadcast
 footer = '\n©BOTCAHBOTz'
 namabot = 'BOTCAHBOTz'
 namalu = 'Tio'
