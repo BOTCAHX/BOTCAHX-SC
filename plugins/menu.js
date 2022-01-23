@@ -239,8 +239,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "buttonText": "List Menu 📑",
           "listType": "SINGLE_SELECT",
           "sections": [
-            {
-	    "title": `${ucapan()}, Pilih Menu Nya`,
+            { 
               "rows": [
                 {
                   "title": `[🧾] Semua Perintah`,
