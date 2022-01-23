@@ -226,22 +226,22 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
-          "description": `
-╭─── *〘Status〙* ─⬣
-│⋡ Aktif selama ${uptime}
-│⋡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│⋡ *${Object.keys(global.db.data.users).length}* Pengguna
-│⋡ *${totaljadibot.length}* Jadibot
-│⋡ *${conn.blocklist.length}* Terblock
-│⋡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│⋡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-│⋡ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB ↻ / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺ 
-╰──────────⬣`.trim(),
-          "buttonText": "Menu ⥹",
+          "description": `*⿻Status⿻*
+•  _Aktif selama ${uptime}_
+•  _Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}_
+•  _*${Object.keys(global.db.data.users).length}* Pengguna_
+•  _*${totaljadibot.length}* Jadibot_
+•  _*${conn.blocklist.length}* Terblock_
+•  _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned_
+•  _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned_
+•  _RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB ↻ / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺_ 
+                                `.trim(),
+          "footerText": "Silahkan tekan tombol \"Menu \" untuk melihat sub-menu BOTCAHX.\n\nJika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
+          "buttonText": "Menu",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `${ucapan()} - By Tio`,
+            "title": `「Tio Official」- Hi ${ucapan()} ${name}`,
               "rows": [
                 {
                   "title": `Semua Perintah`,
