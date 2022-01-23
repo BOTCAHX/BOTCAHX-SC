@@ -234,8 +234,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬡ *${conn.blocklist.length}* Terblock
 ┃⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 ┃⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-┃⬡ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-┃⬡ Server ${format(os.totalmem() - os.freemem())} / ${format(os.totalmem())}
+┃⬡ RAM _${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB_
 ┗━━━━━━━━⬣`.trim(),
           "buttonText": "List Menu 📑",
           "listType": "SINGLE_SELECT",
