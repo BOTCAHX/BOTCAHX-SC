@@ -227,16 +227,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-╭─ *〘𝐒𝐭𝐚𝐭𝐮𝐬〙* ❒
-│ Aktif selama ${uptime}
-│ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-│ *${Object.keys(global.db.data.users).length}* Pengguna
-│ *${totaljadibot.length}* Jadibot
-│ *${conn.blocklist.length}* Terblock
-│ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-│ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ✇
-╰─────────❒`.trim(),
+╭─ *〘Status〙* ❒
+├ Aktif selama ${uptime}
+├ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+├ *${Object.keys(global.db.data.users).length}* Pengguna
+├ *${totaljadibot.length}* Jadibot
+├ *${conn.blocklist.length}* Terblock
+├ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+├ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+├ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB 
+╰──────────❒`.trim(),
           "buttonText": "𝐋𝐢𝐬𝐭 𝐦𝐞𝐧𝐮 📑",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -475,16 +475,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "Selamat dinihari"
   if (time >= 4) {
-    res = "𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐩𝐚𝐠𝐢*"
+    res = "Selamat Pagi"
   }
   if (time > 10) {
-    res = "𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐬𝐢𝐚𝐧𝐠"
+    res = "Selamat Siang"
   }
   if (time >= 15) {
-    res = "𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐬𝐨𝐫𝐞"
+    res = "Selamat Sore"
   }
   if (time >= 18) {
-    res = "𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐦𝐚𝐥𝐚𝐦"
+    res = "Selamat Malam"
   }
   return res
 }
