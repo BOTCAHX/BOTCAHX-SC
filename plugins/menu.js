@@ -25,7 +25,7 @@ const defaultMenu = {
 │
 │⬡ Uptime: *%uptime (%muptime)*
 │⬡ Database: %rtotalreg dari %totalreg
-│⬡ Memory Bot *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+│⬡ Memory Bot: *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 ╰────────⬣`.trimStart(),
   header: '╭〔 %category 〕',
   body: '├%cmd %islimit %isPremium',
