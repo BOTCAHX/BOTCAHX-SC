@@ -17,7 +17,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
 🔖 _Follow IG Owner_ : https://instagram.com/prm2.0?utm_medium=copy_link
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ═ 〘 BOT STATUS 〙 ═
 ⋡ ${namabot} Versi ${package.version}
 ⋡ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
@@ -30,7 +30,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ⋡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 ⋡ *Request?* ${package.bugs.url}
 ⋡ *Memory Bot* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ⋡ Pulsa : 082221792667
 ⋡ Dana : 082221792667
 *⋡Website Bot⋡*
@@ -39,10 +39,10 @@ let handler  = async (m, { conn, usedPrefix }) => {
 ⋡ *Official Grup Whatsapp* :
 ⋡ *Grup Official* :
 ⋡ ${gc1}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ©2021 ${namabot}
 Script original by BOTCAHX
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  
 ═〘 ${namabot} 〙 ═
 `.trim(), m)
