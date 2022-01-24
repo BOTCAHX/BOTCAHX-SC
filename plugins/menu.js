@@ -226,8 +226,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
-          "description": `*□INFORMASI□*
-────────────────         
+          "description": `
+╭────「 *INFORMASI* 」─‣     
 •  _Aktif selama_ *${uptime}*
 •  _Baterai_ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 _pengisian_' : ''}` : ' _tidak diketahui_'}
 •  _*${Object.keys(global.db.data.users).length}* Pengguna_
@@ -236,9 +236,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 •  _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned_
 •  _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned_
 •  _RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺_ 
-──────────────── 
+
+╰─────「 *ListMenu* 」──‣
                                 `.trim(),
-          "footerText": "*□CATATAN□*\n_•Silahkan Tekan Tombol \" Menu \" Untuk Melihat Sub-Menu BOT._\n\n_•Jika Menemukan Bug, Error Atau Kesulitan Dalam Penggunaan Silahkan Laporkan/Tanyakan Kepada Owner._\n「Bot byTioXd」",
+          "footerText": "*□CATATAN□*\n\n_•Silahkan Tekan Tombol \" Menu \" Untuk Melihat Sub-Menu BOT._\n_•Jika Menemukan Bug, Error Atau Kesulitan_\n _Dalam Penggunaan Silahkan Laporkan/Tanyakan Kepada Owner._\n──────────────────────────\n「Bot byTioxD」",
           "buttonText": "Menu",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -355,7 +356,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "rowId": ".? info"
                 }, {
                   "title": "Tanpa Kategori",
-                  "description": "",
+                  "description": "Untuk Save Nomor",
                   "rowId": ".? tanpakategori"
                 }, {
                   "title": "Owner",
