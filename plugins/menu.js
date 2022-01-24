@@ -226,17 +226,19 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
-          "description": `*⿻Status⿻*
-•  _Aktif selama ${uptime}_
+          "description": `*□INFORMASI□*
+────────────────         
+•  _Aktif selama_ *${uptime}*
 •  _Baterai_ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 _pengisian_' : ''}` : ' _tidak diketahui_'}
 •  _*${Object.keys(global.db.data.users).length}* Pengguna_
 •  _*${totaljadibot.length}* Jadibot_
 •  _*${conn.blocklist.length}* Terblock_
 •  _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned_
 •  _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned_
-•  _RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB ↻ / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺_ 
+•  _RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺_ 
+──────────────── 
                                 `.trim(),
-          "footerText": "Silahkan tekan tombol \"Menu \" untuk melihat sub-menu BOTCAHX.\n\nJika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
+          "footerText": "*□CATATAN□*\n_•Silahkan Tekan Tombol \" Menu \" Untuk Melihat Sub-Menu BOT._\n\n_•Jika Menemukan Bug, Error Atau Kesulitan Dalam Penggunaan Silahkan Laporkan/Tanyakan Kepada Owner._\n「Bot byTioXd」",
           "buttonText": "Menu",
           "listType": "SINGLE_SELECT",
           "sections": [
