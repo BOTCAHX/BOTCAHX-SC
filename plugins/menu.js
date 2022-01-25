@@ -25,11 +25,11 @@ const defaultMenu = {
 │
 │⬡ Uptime: *%uptime (%muptime)*
 │⬡ Database: %rtotalreg dari %totalreg
-│⬡ Memory Bot: *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+│⬡ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 ╰────────⬣`.trimStart(),
-  header: '╭〔 %category 〕',
+  header: '╭──〔 %category 〕',
   body: '├%cmd %islimit %isPremium',
-  footer: '╰──⬡\n',
+  footer: '╰────⬡\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -227,24 +227,23 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-╭────「 *INFORMASI* 」──‣     
-•  _Aktif selama_ *${uptime}*
-•  _Baterai_ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 _pengisian_' : ''}` : ' _tidak diketahui_'}
-•  _*${Object.keys(global.db.data.users).length}* Pengguna_
-•  _*${totaljadibot.length}* Jadibot_
-•  _*${conn.blocklist.length}* Terblock_
-•  _*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned_
-•  _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned_
-•  _RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺_ 
-
-╰─────「 *ListMenu* 」──‣
+┌──〔 Status 〕─⬣
+│⬡ Aktif selama *${uptime}*
+│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : ' tidak diketahui'}
+│⬡ *${Object.keys(global.db.data.users).length}* Pengguna
+│⬡ *${totaljadibot.length}* Jadibot
+│⬡ *${conn.blocklist.length}* Terblock
+│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+│⬡ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺
+└────────⬣
                                 `.trim(),
-          "footerText": "*□CATATAN□*\n\n_•Silahkan Tekan Tombol \" Menu \" Untuk Melihat Sub-Menu BOT._\n_•Jika Menemukan Bug, Error Atau Kesulitan_\n _Dalam Penggunaan Silahkan Laporkan/Tanyakan Kepada Owner._\n──────────────────────────\n「Bot byTioxD」",
+          "footerText": "⬡ CATATAN ⬡\n│⬡Silahkan Tekan Tombol \" Menu \" Untuk Melihat\n│ Sub-Menu Bot.\n│⬡ Jika Menemukan Bug, Error Atau Kesulitan\n│ Dalam Penggunaan Silahkan Laporkan/│Tanyakan Kepada Owner.\n└─────⬡\n- ©TioOfc -",
           "buttonText": "Menu",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `「Tio Official」- Hi ${ucapan()} ${name}`,
+            "title": `©Tio Official - Hi ${ucapan()} ${name}`,
               "rows": [
                 {
                   "title": `Semua Perintah`,
