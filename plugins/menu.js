@@ -227,7 +227,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-╭────「 *INFORMASI* 」─‣     
+╭────「 *INFORMASI* 」──‣     
 •  _Aktif selama_ *${uptime}*
 •  _Baterai_ ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 _pengisian_' : ''}` : ' _tidak diketahui_'}
 •  _*${Object.keys(global.db.data.users).length}* Pengguna_
