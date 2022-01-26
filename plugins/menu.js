@@ -238,7 +238,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 │⬡ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺
 └────────⬣
                                 `.trim(),
-          "footerText": "┌─〔 Catatan 〕─⬣\n│⬡ Silahkan Tekan Tombol \" Menu \" Untuk Melihat\n│    Sub-Menu Bot.\n│⬡ Jika Menemukan Bug, Error Atau Kesulitan\n│    Dalam Penggunaan Silahkan Laporkan/\n│    Tanyakan Kepada Owner.\n└────────⬣\n- ©TioOfc -",
+          "footerText": "┌─〔 Catatan 〕─⬣\n│⬡ Silahkan Tekan Tombol \" Menu \" Untuk Melihat\n│⬡ Sub-Menu Bot.\n│⬡ Jika Menemukan Bug, Error Atau Kesulitan\n│⬡ Dalam Penggunaan Silahkan Laporkan/\n│⬡ Tanyakan Kepada Owner.\n└────────⬣\n- ©TioOfc -",
           "buttonText": "Menu",
           "listType": "SINGLE_SELECT",
           "sections": [
