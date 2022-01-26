@@ -626,7 +626,7 @@ END:VCARD
 `.trim()
     }]
   }, MessageType.contactsArray, { quoted: m })
-m.reply('Ada Perlu apa kak nyari Owner??')
+m.reply('*Itu Adalah Nomor Owner Bot Jika Tidak Ada Perlu jangan Asal Chat.*')
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
