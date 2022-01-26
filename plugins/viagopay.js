@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
 	conn.reply(m.chat, `╠═〘 PEMBAYARAN 〙 ═
 ╠═ Untuk Pembayaran Via Gopay
 ╠➥ Ke nomer ini
-║➥ Tidak menginstal
+║➥ Maaf Belum Tersedia Untuk Gopay
 ║
 ╠═〘 Fitur 〙 ═
 ║
