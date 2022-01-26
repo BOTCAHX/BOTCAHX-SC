@@ -24,7 +24,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['pay @user <amount>']
 handler.tags = ['xp']
 handler.command = /^pay$/
-handler.rowner = true
+handler.rowner = false
 
 module.exports = handler
 
