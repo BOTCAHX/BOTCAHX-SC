@@ -8,7 +8,7 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-╭──〔 ${namabot} 〕─⬣
+┌──〔 ${namabot} 〕─⬣
 │⬡ Hai, %name!
 │
 │⬡ Tersisa *%limit Limit*
@@ -26,10 +26,10 @@ const defaultMenu = {
 │⬡ Uptime: *%uptime (%muptime)*
 │⬡ Database: %rtotalreg dari %totalreg
 │⬡ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
-╰────────⬣`.trimStart(),
-  header: '╭──〔 %category 〕',
+└────────⬣`.trimStart(),
+  header: '┌──〔 %category 〕',
   body: '├%cmd %islimit %isPremium',
-  footer: '╰────⬡\n',
+  footer: '└────⬡\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
