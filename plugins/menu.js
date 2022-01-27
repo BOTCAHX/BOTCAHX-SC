@@ -243,7 +243,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `Runtime ${uptime} - ©TioOfxc`,
+            "title": `Runtime ${uptime} - ©TioOfc`,
               "rows": [
                 {
                   "title": `Semua Perintah`,
