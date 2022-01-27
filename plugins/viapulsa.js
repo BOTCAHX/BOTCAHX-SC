@@ -6,9 +6,9 @@ ut handler = async (m, { conn }) => {
 ║
 ╠═〘 Fitur 〙 ═
 ║
-╠➥ *FITUR DOWNLOADER 500++*
-║     *YouTube, Twitter,*
-║     *Tiktok, Instagram, dll.*
+╠➥ *FITUR DOWNLOADER 500++
+║     YouTube, Twitter,
+║     Tiktok, Instagram, dll.*
 ║    *FITUR STIKER*
 ╠➥ *FITUR ADMIN*
 ║    *KICK ORANG*
