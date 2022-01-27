@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
 ║
 ╠➥ *FITUR DOWNLOADER 500++
 ║     YouTube, Twitter, 
-║     Tiktok, Instagram, dll.
+║     Tiktok, Instagram, dll.*
 ║    *FITUR STIKER*
 ╠➥ *FITUR ADMIN*
 ║    *KICK ORANG*
