@@ -18,4 +18,6 @@ handler.tags = ['group']
 
 handler.command = /^totalpesan$/i
 
+handler.rowner = true
+
 module.exports = handler
