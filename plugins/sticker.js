@@ -41,6 +41,8 @@ handler.help = ['stiker ', 'stiker <url>']
 handler.tags = ['sticker']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 
+handler.limit = 15
+
 module.exports = handler
 
 const isUrl = (text) => {
