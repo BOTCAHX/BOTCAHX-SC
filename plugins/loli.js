@@ -1,22 +1,16 @@
 let fetch = require('node-fetch')
-async function getRandom(url) {
-return Math.floor(Math.random() * url)
-}
-let handler  = async (m, { conn }) => {
-m.reply(wait)
-conn.sendFile(m.chat, `https://recoders-area.caliph.repl.co/api/lolivid`, '', ``, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
 
+let handler = async (m, { conn, text }) => {
+let res = await fetch('https://raw.githubusercontent.com/Xmell91/loli/master/loli.json')
+if (!res.ok) throw await `${res.status} ${res.statusText}`;
+let json = await res.json();
+let url = json[Math.floor(Math.random() * json.length)]
+await conn.sendButtonImg(m.chat, await (await fetch(url)).buffer(), 'nih', '© Tio', 'Get Again', '/loli', m)
 }
-handler.help = ['lolivid']
-handler.tags = ['video']
-handler.command = /^(loli|loliv)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-handler.admin = false
-handler.botAdmin = false
-handler.fail = null
+handler.command = /^(loli)$/i
+handler.tags = ['fun']
+handler.help = ['loli']
+
+handler.limit = true
 
 module.exports = handler
