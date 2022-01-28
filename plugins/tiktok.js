@@ -24,9 +24,7 @@ ${txt}
   let url = json.result.link_dl1 || json.result.link_dl2 || ''
   if (!url) throw 'Gagal mengambil url download'
   let txt = `
-  - *By:* ${json.result.name}
-  - *Caption:*
-  ${json.result.caption}
+  - *Script Bye TioOfc*
     `
     await conn.sendFile(m.chat, url, 'tiktok.mp4', txt.trim(), m)
 }
