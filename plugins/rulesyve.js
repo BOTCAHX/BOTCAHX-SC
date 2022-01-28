@@ -10,39 +10,47 @@ let handler  = async (m, { conn, usedPrefix }) => {
   //await m.reply('wait Kakak!!')
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
-═〘 RULES ${namabot} 〙═
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🔖 _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
-🔖 _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
-🔖 _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
-🔖 _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
-🔖 _Follow IG Owner_ : https://instagram.com/prm2.0?utm_medium=copy_link
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-═ 〘 BOT STATUS 〙 ═
-⋡ ${namabot} Versi ${package.version}
-⋡ *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
-⋡ *Issue:* ${package.bugs.url}
-⋡ *Ping:* ${neww - old} *ms*
-⋡ *Total user:* ${totalreg} *user*
-⋡ *Uptime:* ${uptime}
-⋡ *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-⋡ *${conn.blocklist.length}* Terblock
-⋡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-⋡ *Request?* ${package.bugs.url}
-⋡ *Memory Bot* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-⋡ Pulsa : 082221792667
-⋡ Dana : 082221792667
-*⋡Website Bot⋡*
-⋡ https://tioprm.herokuapp.com/
-⋡ https://tiodownloaders.herokuapp.com/
-⋡ *Official Grup Whatsapp* :
-⋡ *Grup Official* :
-⋡ ${gc1}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-©2021 ${namabot}
-Script original by BOTCAHX
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+『 *RULES* 』
+
+❎ _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
+
+❎ _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
+
+❎ _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
+
+❎ _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
+
+✅ _Instagram_ : https://instagram.com/prm2.0?utm_medium=copy_link
+
+⬣────────────────────────⬣
+═〔 Donasi 〕═
+『📱』 Pulsa : 082221792667
+『📱』 Dana : 082221792667
+⬣────────────────────────⬣
+═〔 Website 〕═
+『🌐』 https://tioprm.herokuapp.com/
+『🌐』 https://tiodownloaders.herokuapp.com/
+『🏢』  *Official Grup Whatsapp* :
+『✅』  ${gc1}
+⬣────────────────────────⬣
+═ 〔 Status 〕 ═
+『🔖』 ${namabot} Versi ${package.version}
+『📚』  *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
+
+『ℹ️』  *Issue:* ${package.bugs.url}
+
+『📶』  *Ping:* ${neww - old} *ms*
+『📊』  *Total user:* ${totalreg} *user*
+『☁️』  *Uptime:* ${uptime}
+『🔋』  *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+『⚠️』  *${conn.blocklist.length}* Terblock
+『🚧』  *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+『📞』  *Request?* ${package.bugs.url}
+
+『🗄️』  *Memory Usage* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+⬣────────────────────────⬣
+©TioOfc - ©2022
+⬣────────────────────────⬣
  
 ═〘 ${namabot} 〙 ═
 `.trim(), m)
