@@ -227,19 +227,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-┌──〔 Status 〕─⬣
-│⬡ Aktif selama *${uptime}*
-│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : ' tidak diketahui'}
-│⬡ *${Object.keys(global.db.data.users).length}* Pengguna
-│⬡ *${totaljadibot.length}* Jadibot
-│⬡ *${conn.blocklist.length}* Terblock
-│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
-│⬡ RAM ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺
-└────────⬣
+⬡ 📈 *${Object.keys(global.db.data.users).length}* User 
+⬡ 🔋 *${conn.battery != undefined ? `${conn.battery.value}%* ${conn.battery.live ? '🔌 pengisian' : ''}` : ' tidak diketahui'}
+⬡ 🚧 *${conn.blocklist.length}* Block
+⬡ ☁️ *${uptime}* Runtime
+⬡ ⛔ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+⬡ 🚫 *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* User Terbanned
+⬡ 📱 *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB↺*
                                 `.trim(),
-          "footerText": "┌─〔 Catatan 〕─⬣\n│⬡ Silahkan Tekan Tombol \" Menu \" Untuk Melihat\n│⬡ Sub-Menu Bot.\n│⬡ Jika Menemukan Bug, Error Atau Kesulitan\n│⬡ Dalam Penggunaan Silahkan Laporkan/\n│⬡ Tanyakan Kepada Owner.\n└────────⬣\n © TioOfc",
-          "buttonText": "Menu",
+          "footerText": "Jika menemukan bug,error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
+          "buttonText": "Click Here",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
@@ -475,18 +472,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari"
+  res = "Selamat dinihari🌃"
   if (time >= 4) {
-    res = "Selamat Pagi"
+    res = "Selamat Pagi🌄"
   }
   if (time > 10) {
-    res = "Selamat Siang"
+    res = "Selamat Siang🌄"
   }
   if (time >= 15) {
-    res = "Selamat Sore"
+    res = "Selamat Sore🌇"
   }
   if (time >= 18) {
-    res = "Selamat Malam"
+    res = "Selamat Malam🌉"
   }
   return res
 }
