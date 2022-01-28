@@ -227,13 +227,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-⬡ 📈 *${Object.keys(global.db.data.users).length}* User 
-⬡ 🔋 *${conn.battery != undefined ? `${conn.battery.value}%* ${conn.battery.live ? '🔌 pengisian' : ''}` : ' tidak diketahui'}
-⬡ 🚧 *${conn.blocklist.length}* User Terblock
-⬡ ☁️ *${uptime}* Runtime
-⬡ ⛔ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-⬡ 🚫 *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* User Terbanned
-⬡ 📱 *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB↺*
+© TioOfc
                                 `.trim(),
           "footerText": "Jika menemukan bug,error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
           "buttonText": "Click Here",
