@@ -42,11 +42,11 @@ namakontak2 = 'Tio'
 //kasihcaption = `Done`
 
 // Sticker WM
-global.packname = '𝘽𝙊𝙏𝘾𝘼𝙃𝙓' // ganti aja
-global.author = '𝘽𝙊𝙏𝘾𝘼𝙃𝙓' // ganti aja
+global.packname = 'BOTCAHX' // ganti aja
+global.author = 'BOTCAHX' // ganti aja
 
 //yyy
-bc = '𝘽𝘾𝙃' //𝘽𝙊𝙏𝘾𝘼𝙃𝙓 𝘽𝙍𝙊𝘼𝘿𝘾𝘼𝙎𝙏
+bc = 'BCH' //BOTCAHX BROADCAST
 footer = '\n©BOTCAHX'
 namabot = '𝘽𝙊𝙏𝘾𝘼𝙃𝙓'
 namalu = 'Tio'
