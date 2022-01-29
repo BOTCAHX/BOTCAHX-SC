@@ -10,26 +10,12 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `${pad(hours)}Jam ${pad(minutes)}Menit ${pad(seconds)}Detik`
+  return `\n\t\t*「 \t ${pad(hours)}Jam ${pad(minutes)}Menit ${pad(seconds)}Detik \t」*\n`
 }
 					runtime = process.uptime()
-					teks = `
-┌──〔 Status Bot 〕─⬣
-│⬡ Runtime ${kyun(runtime)}
-└────────⬣
-┌──〔 Donasi 〕─⬣
-│⬡ Donasi Via Dana : 082221792667
-│⬡ Donasi Via Pulsa : 081395861695
-└────────⬣
-┌──〔 Menu Tambahan 〕─⬣
-│=> ⬡ .sf 
-│=> ⬡ .totalfitur
-│=> ⬡ .getplugins
-│=> ⬡ .hacker
-└────────⬣`
-					run = `${kyun(runtime)}`
+					teks = `${kyun(runtime)}`
 					var itsme = `0@s.whatsapp.net`
-					var split = `teks`
+					var split = `TioOfc>//<`
 					const rtimebro = {
 					contextInfo: {
 					participant: itsme,
@@ -42,16 +28,17 @@ function kyun(seconds){
 					}
 						    
 						     prep = conn.prepareMessageFromContent(m.chat, { orderMessage: { 
-itemCount: -2022, status: 500,
+itemCount: +2022, status: 500,
 surface: 999,
 message: teks,
-description: 'Cript',
-orderTitle: 'node',
+description: 'Tio',
+orderTitle: 'Run',
 token: '9',
 curreyCode: 'IDR',
-totalCurrencyCode: 'Runtime',
-totalAmount1000: '1000000',
-sellerJid: '6282320730684@s.whatsapp.net',
+totalCurrencyCode: 'Rp.',
+totalAmount1000: '2022',
+sellerJid: '19592142111@s.whatsapp.net',
+thumbnail: global.image3
 }}, {contextInfo: null, quoted: m})
 conn.relayWAMessage(prep)
 				/*	conn.sendMessage(m.chat, `${teks}`, MessageType.text, rtimebro)*/
