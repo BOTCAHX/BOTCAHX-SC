@@ -1,16 +1,3 @@
-// Bismillahirrahmanirrahim
-// thank you to ALLAH Swt
-// thank you to Nurutomo as wabot-aq
-// thank you to ariffb as stikerinbot
-// thank you to botstylee
-// thank you to bochilgaming as games-wabot
-// thank you to benni ismael
-// thank you to zerochanBot
-// thank you to fernazer
-// thank you to MikeBot Dev Team
-// thank you to ALL Bot creator
-// and thanks you to who support my Bot
-
 gc1 = 'https://chat.whatsapp.com/JEDQfzMGZan4HA98wtxsNL'
 gc2 = ''
 gc3 = ''
@@ -23,6 +10,7 @@ global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com', 
   rey: 'https://api.sekha.tech',
+  xteam: 'https://api.xteam.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',
   lol: 'https://api.lolhuman.xyz',
   dhnjing: 'https://dhnjing.xyz',
