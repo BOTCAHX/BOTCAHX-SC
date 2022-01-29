@@ -47,7 +47,7 @@ xteamkey = 'Dawnfrostkey'
 //xteam        MIMINETBOT
 namaig = 'GAK ADA :)'
 namagithub = 'GAK ADA :)'
-kasihcaption = `Nih kak`
+kasihcaption = `Done`
 namakontak1 = 'Tio'
 namakontak2 = 'Tio'
 
