@@ -16,7 +16,7 @@ function kyun(seconds){
 					teks = `
 ┌──〔 Status Bot 〕─⬣
 │⬡ Aktif selama ${kyun(runtime)}
-│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : ' tidak diketahui'}
+│⬡ Baterai *${conn.battery != undefined ? `${conn.battery.value}%* ${conn.battery.live ? '🔌 pengisian' : ''}` : ' tidak diketahui'}
 │⬡ *${Object.keys(global.db.data.users).length}* Pengguna
 │⬡ *${conn.blocklist.length}* Terblock
 │⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
