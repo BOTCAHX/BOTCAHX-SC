@@ -14,12 +14,19 @@ function kyun(seconds){
 }
 					runtime = process.uptime()
 					teks = `
-┌〔  _*Runtime*_  〕
-├  _*${kyun(runtime)}*_
-├ _*RAM USAGE*_ _*${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*_
-├ _*Donasi lewat Dana : 082221792667*_
-├ _*Donasi lewat Pulsa : 082221792667*_
-└────`
+┌──〔 Status Bot 〕─⬣
+│⬡ Aktif selama ${kyun(runtime)}
+│⬡ Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : ' tidak diketahui'}
+│⬡ *${Object.keys(global.db.data.users).length}* Pengguna
+│⬡ *${conn.blocklist.length}* Terblock
+│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+│⬡ RAM *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB  / ${Math.round(require('os').totalmem / 1024 / 1024)}MB ↺*
+└────────⬣
+┌──〔 Donasi 〕─⬣
+│⬡ Donasi Via Dana : 082221792667
+│⬡ Donasi Via Pulsa : 081395861695
+└────────⬣`
 					run = `${kyun(runtime)}`
 					var itsme = `0@s.whatsapp.net`
 					var split = `teks`
