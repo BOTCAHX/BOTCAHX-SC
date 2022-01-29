@@ -39,16 +39,16 @@ kasihcaption = `Done`
 namakontak1 = 'Tio'
 namakontak2 = 'Tio'
 
-//kasihcaption = `Nih Kak`
+//kasihcaption = `Done`
 
 // Sticker WM
-global.packname = 'BOTCAHX' // ganti aja
-global.author = 'BOTCAHX' // ganti aja
+global.packname = '𝘽𝙊𝙏𝘾𝘼𝙃𝙓' // ganti aja
+global.author = '𝘽𝙊𝙏𝘾𝘼𝙃𝙓' // ganti aja
 
 //yyy
-bc = 'BCH' //BOTCAHX Broadcast
-footer = '\n© BOTCAHX'
-namabot = 'BOTCAHX'
+bc = '𝘽𝘾𝙃' //𝘽𝙊𝙏𝘾𝘼𝙃𝙓 𝘽𝙍𝙊𝘼𝘿𝘾𝘼𝙎𝙏
+footer = '\n©BOTCAHX'
+namabot = '𝘽𝙊𝙏𝘾𝘼𝙃𝙓'
 namalu = 'Tio'
 
 
