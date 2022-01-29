@@ -41,7 +41,7 @@ handler.help = ['stiker ', 'stiker <url>']
 handler.tags = ['sticker']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 
-handler.limit = 15
+handler.limit = 5
 
 module.exports = handler
 
