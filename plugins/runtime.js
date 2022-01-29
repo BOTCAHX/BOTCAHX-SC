@@ -27,7 +27,7 @@ function kyun(seconds){
 │⬡ Donasi Via Dana : 082221792667
 │⬡ Donasi Via Pulsa : 081395861695
 └────────⬣
-┌──〔 Owner Cmd 〕─⬣
+┌──〔 Owner CMD 〕─⬣
 │=> .sf 
 │=> .totalfitur
 │=> .getplugins
