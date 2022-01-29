@@ -7,5 +7,3 @@ Heroku Buildpack
 | **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
 
 
-
-## FOR TERMUX/UBUNTU/SSH USER
