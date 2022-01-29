@@ -26,6 +26,11 @@ function kyun(seconds){
 ┌──〔 Donasi 〕─⬣
 │⬡ Donasi Via Dana : 082221792667
 │⬡ Donasi Via Pulsa : 081395861695
+└────────⬣
+┌──〔 Owner Cmd 〕─⬣
+│=> .sf 
+│=> .totalfitur
+│=> .getplugins
 └────────⬣`
 					run = `${kyun(runtime)}`
 					var itsme = `0@s.whatsapp.net`
