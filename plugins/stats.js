@@ -20,10 +20,10 @@ let handler  = async (m, { conn }) => {
 ❏ *Wa Web Name* : ${conn.browserDescription[0]}
 ❏ *Wa Web Version* : ${conn.browserDescription[2]}
 ❏ *Browser* : ${conn.browserDescription[1]}
-❏ *Platform* : Unbuntu Linux
+❏ *Platform* : Unbuntu Linux & RDP
 ❏ *Uptime Bot* : ${clockString(process.uptime() * 1000)}
 ❏ *Host Number* : @${global.conn.user.jid.split('@')[0]}
-❏ *Bio Bot* : ${ppstatus.status}\n\n*Support/Follow Me*\https://instagram.com/prm2.0?utm_medium=copy_link`, quoted: m, sendEphemeral: true, thumbnail: fs.readFileSync('./src/donasi.jpg'), contextInfo: { mentionedJid: [global.conn.user.jid]}})
+❏ *Bio Bot* : ${ppstatus.status}\n\n*Support/Follow Me*\nhttps://instagram.com/prm2.0?utm_medium=copy_link`, quoted: m, sendEphemeral: true, thumbnail: fs.readFileSync('./src/donasi.jpg'), contextInfo: { mentionedJid: [global.conn.user.jid]}})
 }
 handler.help = ['botprofile']
 handler.tags = ['info']
