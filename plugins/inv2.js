@@ -351,7 +351,7 @@ ${readMore}
     conn.send2Button(m.chat, str, wm, `⋮☰ Back`, `.menu`, `Shop`, `.shop`, m)
     conn.reply(str)
 }
-handler.help = ['inventory', 'inv']
+handler.help = ['inventory', 'inv2']
 handler.tags = ['rpg']
 handler.command = /^(inv(entory)?|level(ing)?|myinv|e?xp)$/i
 handler.register = true
