@@ -49,11 +49,6 @@ let handler  = async (m, { conn, usedPrefix }) => {
 
 『🗄️』  *Memory Usage* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ⬣────────────────────────⬣
-『 *Extra Menu* 』
-=> .totalfitur
-=> .getplugins
-=> .hacker
-=> .sf
 
 ©TioOfc - ©2022
 
