@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
   conn.sendFile(m.chat, res, 'blowjob.jpg', `HerokuApps © BOTCAHX`, m)
 }
 handler.help = ['blowjob']
-handler.tags = ['nsfw']
+handler.tags = ['hentai']
 handler.command = /^(blowjob)$/i
 handler.limit = true
 
