@@ -6,7 +6,7 @@ let handler = async (m, { usedPrefix, command, text }) => {
     m.reply(require('fs').readFileSync('./plugins/' + text + '.js', 'utf-8'))
 }
 handler.help = ['getplugin'].map(v => v + ' <teks>')
-handler.tags = ['info']
+handler.tags = ['owner']
 handler.command = /^(getplugin|gp)$/i
 
 handler.rowner = true
