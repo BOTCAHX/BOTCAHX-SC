@@ -10,7 +10,7 @@ let handler = async (m) => {
     conn.reply(str)
 }
 handler.help = [`cekdosa`]
-handler.tag = [`fun`,`islam`,'cek']
+handler.tag = [`fun`]
 handler.command = /^(cekdosa|dosa)$/i
 
 module.exports = handler
