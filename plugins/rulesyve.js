@@ -12,26 +12,36 @@ let handler  = async (m, { conn, usedPrefix }) => {
   conn.reply(m.chat, `
 『 *RULES* 』
 
-❎ _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
+_*BOTCAHX*_ merupakan suatu program bot whatsapp, yang menggunakan Heroku
+Adapun ketentuan untuk memakai _*BOTCAHX*_. :
 
-❎ _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
+*1.* Pengguna dapat menggunakan semua perintah/command dengan batasan limit sebanyak 50 setiap pengguna terkecuali user premium dengan limit tanpa batas/unlimited, dan tidak melakukan spam terhadap bot.
+*2.* Dilarang Klik Button yg bertujuan nya tidak jelas
+*3.* Bot dapat memblokir pengguna/user melanggar rules yang ada di bot ini, rules yang harus dipatuhi oleh pengguna antara lain :
+  • Tidak melakukan spam perintah/command yang ada dalam bot ini
+*4.* Dilarang keras mengirim pesan V dan semacamnya yang membuat server down ataupun bot crash
+*5.* Pengguna yang mengirim hal atau data pribadi tidak akan disimpan oleh bot ini, dan tidak akan bertanggung jawab atas data pribadi tersebut!\n\n_Note : Bot ini menggunakan autoread atau langsung membaca pesan yang pengguna kirim_
 
-❎ _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
+*6* _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
 
-❎ _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
+*7* _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
 
-✅ _Instagram_ : https://instagram.com/prm2.0?utm_medium=copy_link
+*8* _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 
-⬣────────────────────────⬣
+*9* _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
+
+*10* _Instagram_ : https://instagram.com/prm2.0?utm_medium=copy_link
+
+────────────────────────
 ═〔 Donasi 〕═
-『📱』 Pulsa : 082221792667
+『📱』 Pulsa : 081395861695
 『📱』 Dana : 082221792667
-⬣────────────────────────⬣
+────────────────────────
 ═〔 Website 〕═
-『🌐』 https://tioprm.herokuapp.com/
-『🌐』 https://tiodownloaders.herokuapp.com/
-『🏢』  *Official Grup Whatsapp* :
-『✅』  ${gc1}
+『 *1* 』 https://tioprm.herokuapp.com/
+『 *2* 』 https://tiodownloaders.herokuapp.com/
+『 *OFC* 』 *Official Grup Whatsapp* :
+『✓』  ${gc1}
 ⬣────────────────────────⬣
 ═ 〔 Status 〕 ═
 『🔖』 ${namabot} Versi ${package.version}
@@ -43,7 +53,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 『📊』  *Total user:* ${totalreg} *user*
 『☁️』  *Uptime:* ${uptime}
 『🔋』  *Baterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-『⚠️』  *${conn.blocklist.length}* Terblock
+『⛔』  *${conn.blocklist.length}* Terblock
 『🚧』  *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
 『📞』  *Request?* ${package.bugs.url}
 
