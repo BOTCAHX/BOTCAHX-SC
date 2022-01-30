@@ -237,7 +237,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
             "title": `Hi ${ucapan()} -  ${time}`,
               "rows": [
                 {
-                  "title": `|🧾|Semua Perintah`,
+                  "title": `|🧾| Semua Perintah`,
                   "description": "Memberikan Semua Fitur Bot",
                   "rowId": ".? all"
                 }, {
@@ -345,7 +345,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Info Tentang Bot",
                   "rowId": ".? info"
                 }, {
-                  "title": "|-|Tanpa Kategori",
+                  "title": "|+| Tanpa Kategori",
                   "description": "Untuk Save Nomor",
                   "rowId": ".? tanpakategori"
                 }, {
