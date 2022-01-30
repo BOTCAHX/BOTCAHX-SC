@@ -1,20 +1,11 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, usedPrefix, command }) => {
-	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
-   heum = await fetch(`https://api.lolhuman.xyz/api/random2/bj?apikey=Dawnfrostkey`)
-    json = await heum.buffer()
-   conn.sendButtonImg(m.chat, json, '🔥🥵🥵', '©mikebot', 'NEXT', `${usedPrefix + command}`, m)
+let handler = async (m, { conn }) => {
+  await m.reply(wait)
+  let res = `https://server-api-rey.herokuapp.com/api/nsfw/blowjob?apikey=apirey`
+  conn.sendFile(m.chat, res, 'blowjob.jpg', `HerokuApps © BOTCAHX`, m)
 }
 handler.help = ['blowjob']
-handler.tags = ['hentai']
-
+handler.tags = ['nsfw']
 handler.command = /^(blowjob)$/i
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
 handler.limit = true
 
 module.exports = handler
-
