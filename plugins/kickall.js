@@ -10,7 +10,7 @@ let handler = async (m, { conn, args }) => {
                await m.reply(m.chat, 'Sukses Kick All Member', m)
 }
 handler.help = ['kickall']
-handler.tags = ['group']
+handler.tags = ['owner']
 handler.command = /^(kickall)$/i
 handler.rowner = true
 handler.owner = true
