@@ -1,11 +1,12 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn, usedPrefix, command }) => {
-    let url = global.API('xteam', '/asupan/darkjoke', {}, 'APIKEY')
-    await conn.sendButtonImg(m.chat, url,  footer, 'Next', `${usedPrefix + command}`, m, 0, { thumbnail: await (await fetch(url)).buffer() })
-    // await conn.sendFile(m.chat, url, '', '', m, 0, { thumbnail: await (await fetch(url)).buffer() })
+let handler  = async (m, { conn, usedPrefix, command }) => {
+conn.sendButtonImg(m.chat, await ( await fetch(global.API('xteam', '/asupan/darkjoke', {}, 'APIKEY'))).buffer(), 'Drag joles','NEXT', `${usedPrefix + command}`, m)
 }
-handler.help = ['darkjoke']
-handler.tags = ['internet']
-handler.command = /^((drag|dark)joke|jokes)$/i
+handler.help = ['darkjokes', 'darkjokes']
+handler.tags = ['internet','image']
+handler.command = /^(darkjoke|darkjokes)$/i
+handler.register = true
+
+handler.limit = true
 
 module.exports = handler
