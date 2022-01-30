@@ -24,7 +24,7 @@ if(!args[0]) throw " please provide place or location name"
 
 
         let str = `
-        ───────────[ *Weather* ]───────────\n🏙️ *Place:* ${name}\n🌍 *Country:* ${Country}\n⛅ *Weather:* ${Weather}\n🌡️ *Temperature:* ${Temperature}\n❄️ *Minimum Temperature:* ${Minimum_Temperature}\n📛 *Maximum Temperature:* ${Maximum_Temperature}\n💧 *Humidity:* ${Humidity}\n🌬️ *Wind:* ${Wind}
+        ───────────[ *Weather* ]──────────\n🏙️ *Place:* ${name}\n🌍 *Country:* ${Country}\n⛅ *Weather:* ${Weather}\n🌡️ *Temperature:* ${Temperature}\n❄️ *Minimum Temperature:* ${Minimum_Temperature}\n📛 *Maximum Temperature:* ${Maximum_Temperature}\n💧 *Humidity:* ${Humidity}\n🌬️ *Wind:* ${Wind}
         `.trim()
         conn.sendButton(m.chat, str, wm, '⋮☰ MENU', '.menu', m)
     }catch(e){
