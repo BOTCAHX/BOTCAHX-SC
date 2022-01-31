@@ -32,17 +32,17 @@ Adapun ketentuan untuk memakai _*BOTCAHX*_. :
 
 *10* _Instagram_ : https://instagram.com/prm2.0?utm_medium=copy_link
 
-────────────────────────
+*────────────────────────*
 ═〔 Donasi 〕═
 『📱』 Pulsa : 081395861695
 『📱』 Dana : 082221792667
-────────────────────────
+*────────────────────────*
 ═〔 Website 〕═
 『 *1* 』 https://tioprm.herokuapp.com/
 『 *2* 』 https://tiodownloaders.herokuapp.com/
 『 *OFC* 』 *Official Grup Whatsapp* :
 『✓』  ${gc1}
-⬣────────────────────────⬣
+*────────────────────────*
 ═ 〔 Status 〕 ═
 『🔖』 ${namabot} Versi ${package.version}
 『📚』  *HomePage:* ${(package.homepage ? package.homepage.url || package.homepage : '[unknown github url]')}
@@ -58,7 +58,7 @@ Adapun ketentuan untuk memakai _*BOTCAHX*_. :
 『📞』  *Request?* ${package.bugs.url}
 
 『🗄️』  *Memory Usage* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-⬣────────────────────────⬣
+*────────────────────────*
 
 ©TioOfc - ©2022
 
