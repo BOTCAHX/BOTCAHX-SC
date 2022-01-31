@@ -5,7 +5,7 @@ itemCount: 999999999999, status: 1,
 message: `Follow Github gua Bang\n\nhttps://github.com/BOTCAHX`,
 orderTitle: 'B',
 sellerJid: '0@s.whatsapp.net',
-thumbnail: fs.readFileSync('./src/donasi.jpg')
+thumbnail: fs.readFileSync('./src/IMG-20220117-WA0111.jpg')
 }}, {contextInfo: null, quoted: m})
 conn.relayWAMessage(prep)
 }
