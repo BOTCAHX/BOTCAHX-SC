@@ -2,7 +2,7 @@ let fs = require('fs')
 let handler  = async (m, { conn, usedPrefix }) => {
 prep = conn.prepareMessageFromContent(m.chat, { orderMessage: { 
 itemCount: 999999999999, status: 1,
-message: `Troli Ni Bang`,
+message: `Follow Github gua Bang\n\nhttps://github.com/BOTCAHX`,
 orderTitle: 'B',
 sellerJid: '0@s.whatsapp.net',
 thumbnail: fs.readFileSync('./src/donasi.jpg')
@@ -14,10 +14,10 @@ conn.relayWAMessage(prep)
 
 handler.help = ['troli']
 
-handler.tags = ['owner']
+handler.tags = ['group']
 
 handler.command = /^troli$/i
-handler.owner = true
+handler.owner = false
 
 
 module.exports = handler
