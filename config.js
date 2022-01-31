@@ -2,14 +2,14 @@ gc1 = 'https://chat.whatsapp.com/JEDQfzMGZan4HA98wtxsNL'
 gc2 = ''
 gc3 = ''
 global.linkGC = ['https://chat.whats', 'https://chat.whatsapp.com/JEDQfzMGZan4HA98wtxsNL'] // ganti jadi group lu
-global.owner = ['6282221792667'] // Put your number here //owner eval
+global.owner = ['6282221792667','6282320830684'] // Put your number here //owner eval
 global.kontak = ['6282221792667','0'] //Ketika ada yang ngetik #owner
 global.mods = ['0'] // Want some help?
 global.prems = ['6282221792667'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com', 
-  rey: 'https://api.sekha.tech',
+  rey: 'https://server-api-rey.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
   nzcha: 'http://nzcha-apii.herokuapp.com',
   bg: 'http://bochil.ddns.net',
@@ -25,7 +25,7 @@ global.APIs = { // API Prefix
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey' (apikey kalian)
   'https://api.xteam.xyz': 'd90a9e986e18778b',
-  'https://api.sekha.tech': 'apirey',
+  'https://server-api-rey.herokuapp.com': 'apirey',
   'https://api.xteam.xyz': 'cristian9407',
   'https://api.lolhuman.xyz': 'RFK-Rey',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
