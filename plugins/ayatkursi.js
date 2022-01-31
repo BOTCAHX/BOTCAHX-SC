@@ -20,7 +20,7 @@ _"${translation}"_
   await m.reply(`Tafsir:\n\n${tafsir}`)
 }
 handler.help = ['ayatkursi']
-handler.tags = ['islam']
+handler.tags = ['quran']
 handler.command = /^(ayatkursi)$/i
 
 
