@@ -9,9 +9,6 @@ global.prems = ['6282221792667'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com', 
-  bx: 'https://bx-hunter.herokuapp.com',
-  hardianto: 'https://hardianto.xyz',
-  neoxr: 'https://neoxr-api.herokuapp.com',
   rey: 'https://server-api-rey.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
   nzcha: 'http://nzcha-apii.herokuapp.com',
@@ -28,18 +25,12 @@ global.APIs = { // API Prefix
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey' (apikey kalian)
   'https://api.xteam.xyz': 'd90a9e986e18778b',
-  'https://bx-hunter.herokuapp.com': 'Ikyy69',
-  'https://hardianto.xyz': 'hardianto',
-  'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://server-api-rey.herokuapp.com': 'apirey',
   'https://api.xteam.xyz': 'cristian9407',
   'https://api.lolhuman.xyz': 'RFK-Rey',
-  'https://api.lolhuman.xyz': 'Dawnfrostkey',
-  'https://caliphapi.com': 'ELYASXD',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
-  'https://fxc7-api.herokuapp.com': 'fxc7COOL',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
