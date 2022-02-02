@@ -22,15 +22,15 @@ Adapun ketentuan untuk memakai _*BOTCAHX*_. :
 *4.* Dilarang keras mengirim pesan V dan semacamnya yang membuat server down ataupun bot crash
 *5.* Pengguna yang mengirim hal atau data pribadi tidak akan disimpan oleh bot ini, dan tidak akan bertanggung jawab atas data pribadi tersebut!\n\n_Note : Bot ini menggunakan autoread atau langsung membaca pesan yang pengguna kirim_
 
-*6* _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
+*6.* _Mohon untuk tidak Spam Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi Pengguna Bot yang Spam_
 
-*7* _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
+*7.* _Mohon untuk tidak Menelpon Bot karena Bot ini sudah memiliki Otomatis Blokir Bagi orang yang nelpon Bot_
 
-*8* _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
+*8.* _Kami tidak bertanggung jawab atas penyalahgunaan Bot_
 
-*9* _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
+*9.* _Kami tidak bertanggung jawab atas kebocoran data pribadi anda_
 
-*10* _Instagram_ : https://instagram.com/prm2.0?utm_medium=copy_link
+*10.* _Instagram_ : https://instagram.com/prm2.0?utm_medium=copy_link
 
 *────────────────────────*
 ═〔 Donasi 〕═
