@@ -5,9 +5,9 @@ let handler = async (m, { conn, command, usedPrefix }) => {
 
 }
 
-handler.help = ['randomnime']
+handler.help = ['animers']
 handler.tags = ['anime']
-handler.command = /^(randomnime)$/i
+handler.command = /^(animers)$/i
 handler.register = true
 
 handler.limit = true
