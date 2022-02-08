@@ -52,7 +52,7 @@ global.author = 'BOTCAHX' // ganti aja
 
 //yyy
 bc = 'BCH' //BOTCAHX BROADCAST
-footer = '\n©BOTCAHX'
+footer = '\n©ʙᴏᴛᴄᴀʜx'
 namabot = '𝘽𝙊𝙏𝘾𝘼𝙃𝙓'
 namalu = 'Tio'
 
