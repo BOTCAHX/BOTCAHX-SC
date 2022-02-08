@@ -67,8 +67,8 @@ Adapun ketentuan untuk memakai _*BOTCAHX*_. :
 `.trim(), m)
 }
 
-handler.help = ['main']
-handler.tags = ['infobot', 'rules']
+handler.help = ['rules']
+handler.tags = ['info']
 handler.command = handler.command = /^(infobot|rules)$/i
 
 handler.fail = null
