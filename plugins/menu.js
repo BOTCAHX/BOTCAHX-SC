@@ -11,21 +11,21 @@ const defaultMenu = {
 ┌──〔 ${namabot} 〕─⬣
 │⬡ Hai, %name!
 │
-│⬡ Tersisa *%limit Limit*
-│⬡ Role *%role*
-│⬡ Level *%level (%exp / %maxexp)* 
+│⬡ Tersisa %limit Limit
+│⬡ Role %role
+│⬡ Level %level (%exp / %maxexp)
 │⬡ [%xp4levelup]
 │⬡ %totalexp XP secara Total
 │ 
-│⬡ Hari : *%week %weton* 
-│⬡ Tanggal : *%date*
+│⬡ Hari : %week %weton
+│⬡ Tanggal : %date
 │⬡ Tanggal Islam : 
-│⬡ *%dateIslamic*
-│⬡ Waktu: *%time*
+│⬡ %dateIslamic
+│⬡ Waktu: %time
 │
-│⬡ Uptime: *%uptime (%muptime)*
+│⬡ Uptime: %uptime (%muptime)
 │⬡ Database: %rtotalreg dari %totalreg
-│⬡ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+│⬡ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 └────────⬣`.trimStart(),
   header: '┌──〔 %category 〕',
   body: '├%cmd %islimit %isPremium',
@@ -233,7 +233,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `Hi ${ucapan()} / ${week} ${weton} / ${date}`,
+            "title": `⸙ Hi ${ucapan()} : ${week} ${weton} : ${date} ⸙`,
               "rows": [
                 {
                   "title": `|🧾| Semua Perintah`,
@@ -344,7 +344,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Info Tentang Bot",
                   "rowId": ".? info"
                 }, {
-                  "title": "|+| Tanpa Kategori",
+                  "title": "|--| Tanpa Kategori",
                   "description": "Untuk Save Nomor",
                   "rowId": ".? tanpakategori"
                 }, {
@@ -439,7 +439,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer, 'Owner Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer,  'Pemilik Bot', `.owner`, 'Donasi', `.donasi`, m)
     //await conn.send3ButtonLoc(m.chat, await (await fetch(https://i.ibb.co/NpX1j11/donasi.jpg`)).buffer(), text.trim(), 'BOTCAHBOTz', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
