@@ -26,6 +26,8 @@ const defaultMenu = {
 │⬡ Uptime: %uptime (%muptime)
 │⬡ Database: %rtotalreg dari %totalreg
 │⬡ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+│
+│⬡ Website : https://botcahx.github.io/price-io/
 └────────⬣`.trimStart(),
   header: '┌──〔 %category 〕',
   body: '├%cmd %islimit %isPremium',
