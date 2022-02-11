@@ -1,12 +1,12 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 ye = `@${m.sender.split`@`[0]}`
-let info = `Hai Kak ${ye} Kunjungi Website Download  Video Tiktok Kami
-Karena terkadang fitur di bot sering erorr 
-Donasi Bot via Dana:082221792667
-🔖 Download Tiktok dengan WM : https://tioprm.herokuapp.com/
-🔖 Download Tiktok Tanpa WM : https://tiodownloaders.herokuapp.com/
-Group Bot
-${gc1}
+let info = `Hai Kak ${ye} Kunjungi Website Kami Karena terkadang fitur di bot sering erorr 
+• Donasi Bot via Dana : 082221792667
+• Download Tiktok dengan WM : https://tioprm.herokuapp.com/
+• Download Tiktok Tanpa WM : https://tiodownloaders.herokuapp.com/
+• Website : https://botcahx.github.io/price-io/
+• Group Bot
+• ${gc1}
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*${global.packname}*`, 'status@broadcast') 
