@@ -9,7 +9,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['join <chat.whatsapp.com>']
 handler.tags = ['premium']
 
-handler.command = /^join$/i
+handler.command = /^botcahx$/i
 
 handler.premium = false
 handler.limit = 1000
