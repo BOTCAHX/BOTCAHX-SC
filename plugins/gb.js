@@ -9,6 +9,8 @@ let info = `Hai Kak ${ye} Kunjungi Website resmi Kami di bawah ini.
 • Bucin web1 : https://bucinxdbytio-4.tioclkp02.repl.co/
 • Bucin web2 : https://botcahx.github.io/BuatKamu/
 • Bucin web3 : http://tio-permana-io.vercel.app/
+
+• Web game : https://games-click-tio.vercel.app/
 • Group Bot
 • ${gc1}
 `.trim()
