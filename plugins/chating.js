@@ -1,6 +1,8 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 ye = `@${m.sender.split`@`[0]}`
-let info = `Hai Kak ${ye}
+let info = `Hai Kak ${ye} Ini adalah website anonymous chat bot
+
+https://anonymous-chat-random-tio.herokuapp.com/
 `.trim()
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', `*${global.packname}*`, 'status@broadcast') 
