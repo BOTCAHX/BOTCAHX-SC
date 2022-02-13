@@ -41,8 +41,12 @@ Adapun ketentuan untuk memakai _*BOTCAHX*_. :
 『 *1* 』 https://tioprm.herokuapp.com/
 『 *2* 』 https://tiodownloaders.herokuapp.com/
 『 *3* 』 *Official Grup Whatsapp* :
-『 *✓* 』  ${gc1}
+『*✓*』  ${gc1}
+
 『 *4* 』 https://botcahx.github.io/price-io/
+『 *5* 』 https://games-click-tio.vercel.app/
+『 *6* 』 https://botcahx.github.io/BuatKamu/
+『 *7* 』https://bucinxdbytio-4.tioclkp02.repl.co/
 *────────────────────────*
 ═ 〔 Status 〕 ═
 『🔖』 ${namabot} Versi ${package.version}
