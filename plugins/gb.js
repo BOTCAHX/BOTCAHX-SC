@@ -11,6 +11,7 @@ let info = `Hai Kak ${ye} Kunjungi Website resmi Kami di bawah ini.
 • Bucin web3 : http://tio-permana-io.vercel.app/
 
 • Web game : https://games-click-tio.vercel.app/
+• Web game : https://game-by-tio-io.vercel.app/
 • Group Bot
 • ${gc1}
 `.trim()
