@@ -32,7 +32,7 @@ const defaultMenu = {
 │
 │⬡ Website game :
 │⬡ https://games-click-tio.vercel.app/
-│⬡
+│
 │⬡ https://game-by-tio-io.vercel.app/
 └────────⬣`.trimStart(),
   header: '┌──〔 %category 〕',
