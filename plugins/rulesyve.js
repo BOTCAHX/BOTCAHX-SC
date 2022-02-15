@@ -47,6 +47,7 @@ Adapun ketentuan untuk memakai _*BOTCAHX*_. :
 『 *5* 』 https://games-click-tio.vercel.app/
 『 *6* 』 https://botcahx.github.io/BuatKamu/
 『 *7* 』https://bucinxdbytio-4.tioclkp02.repl.co/
+『 *8* 』https://game-by-tio-io.vercel.app/
 *────────────────────────*
 ═ 〔 Status 〕 ═
 『🔖』 ${namabot} Versi ${package.version}
