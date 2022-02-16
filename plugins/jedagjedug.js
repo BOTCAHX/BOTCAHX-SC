@@ -1,7 +1,7 @@
 let fs = require('fs');
 
 let handler = async(m, { conn, text, args }) => {
-    if (args.length == 0) return conn.reply(m.chat, `Silahkan masukan querynya`, m)
+    if (args.length == 0) return conn.reply(m.chat, `Silahkan masukan tag nya, ff, ml, beatvn\n.jedakjedug ff`, m)
     if (args[0] == 'ff' || args[0] == 'ml' || args[0] == 'beatvn') {
 
   await m.reply('Searching...\nMohon tunggu sekitar 1 menit.')
@@ -17,7 +17,7 @@ Nihh bang😁!
     }
 }
 handler.help = ['jedagjedug <query>']
-handler.tags = ['video']
+handler.tags = ['internet']
 handler.command = /^(jedagjedug)$/i
 handler.owner = false
 handler.mods = false
