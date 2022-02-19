@@ -27,13 +27,7 @@ const defaultMenu = {
 │⬡ Database: %rtotalreg dari %totalreg
 │⬡ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 │
-│⬡ Website store : 
-│⬡ https://botcahx.github.io/price-io/
-│
-│⬡ Website game :
-│⬡ https://games-click-tio.vercel.app/
-│
-│⬡ https://game-by-tio-io.vercel.app/
+│⬡ Website store : https://bit.ly/3H3gy2z
 └────────⬣`.trimStart(),
   header: '┌──〔 %category 〕',
   body: '├%cmd %islimit %isPremium',
