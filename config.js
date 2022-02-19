@@ -5,7 +5,7 @@ global.linkGC = ['https://chat.whats', 'https://chat.whatsapp.com/JEDQfzMGZan4HA
 global.owner = ['6282221792667','6282320830684'] // Put your number here //owner eval
 global.kontak = ['6282221792667','6282320830684'] //Ketika ada yang ngetik #owner
 global.mods = ['0'] // Want some help?
-global.prems = ['6282221792667'] // Premium user has unlimited limit
+global.prems = ['6282221792667','923243075900'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com', 
@@ -41,7 +41,7 @@ xteamkey = 'cristian9407'
 namaig = 'GAK ADA :)'
 namagithub = 'GAK ADA :)'
 kasihcaption = `Done`
-namakontak1 = 'Tio'
+namakontak1 = 'Owner Tio'
 namakontak2 = 'Nomor Bot'
 
 //kasihcaption = `Done`
