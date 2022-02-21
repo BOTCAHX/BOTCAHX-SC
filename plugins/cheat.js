@@ -54,10 +54,12 @@ break
 }
 
 handler.help = ['cheat <jumlah>', 'cheat <jumlah> @user']
-handler.tags = ['exp']
+handler.tags = ['xp']
 handler.register = false
 handler.command = /^(cheat)$/i
 handler.fail = null
+
+handler.rowner = false
 
 module.exports = handler
 
