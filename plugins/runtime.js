@@ -8,7 +8,7 @@ let runnya = `
 Time : ${time}
 Runtime : ${uptime}
 `
-conn.sendButton(m.chat, runnya, 'Menu', '.menu', m) 
+conn.sendButton(m.chat, runnya, 'Runtime Bot', '??', m) 
 }
 handler.help = ['runtime']
 handler.tags = ['info']
