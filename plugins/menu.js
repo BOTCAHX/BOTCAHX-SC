@@ -358,7 +358,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
             }
           ], "contextInfo": {
             "stanzaId": m.key.id,
-            "participant": m.sender,
+            "participant": "0@s.whatsapp.net",
+            "remoteJid": "6283136505591-1614953337@g.us",
             "quotedMessage": m.message
           }
         }
@@ -441,8 +442,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), footer,  'Pemilik Bot', `.owner`, 'Donasi', `.donasi`, m)
-    //await conn.send3ButtonLoc(m.chat, await (await fetch(https://i.ibb.co/NpX1j11/donasi.jpg`)).buffer(), text.trim(), 'BOTCAHBOTz', 'Pemilik Bot', '.owner', 'Donasi', '.donasi', 'Rules', '.infobot', m)
+    await conn.send2ButtonLoc(m.chat, await(await fetch(fla + teks)).buffer(), text.trim(), `Runtime : ${uptime}\n${week} ${date}`, 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
@@ -467,18 +467,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "Selamat dinihari🌃"
+  res = "Selamat dinihari🌌"
   if (time >= 4) {
     res = "Selamat Pagi🌄"
   }
   if (time > 10) {
-    res = "Selamat Siang🌄"
+    res = "Selamat Siang🏙️"
   }
   if (time >= 15) {
     res = "Selamat Sore🌇"
   }
   if (time >= 18) {
-    res = "Selamat Malam🌉"
+    res = "Selamat Malam🌃"
   }
   return res
 }
