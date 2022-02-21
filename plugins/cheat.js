@@ -2,7 +2,7 @@
 
 let { MessageType } = require('@adiwajshing/baileys')
 let handler  = async (m, { conn, command, args, usedPrefix, isUser, DevMode }) => {
-    if (!isOwner) throw 'Ngapain Make Cheat ???'
+    if (!isUser) throw 'Ngapain Make Cheat ???'
     let type = (args[0] || '').toLowerCase()
     let cht = (args[0] || '').toLowerCase()
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
