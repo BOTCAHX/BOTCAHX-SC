@@ -235,7 +235,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `"${ucapan()} : ${week} ${weton} : ${date}"`,
+            "title": `" ${ucapan()} : ${week} ${weton} : ${date} "`,
               "rows": [
                 {
                   "title": `|🧾| Semua Perintah`,
