@@ -235,7 +235,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `⸙ Hi ${ucapan()} : ${week} ${weton} : ${date} ⸙`,
+            "title": `"${ucapan()} : ${week} ${weton} : ${date}"`,
               "rows": [
                 {
                   "title": `|🧾| Semua Perintah`,
@@ -346,13 +346,29 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Info Tentang Bot",
                   "rowId": ".? info"
                 }, {
-                  "title": "| - | Tanpa Kategori",
+                  "title": "|◻️| Tanpa Kategori",
                   "description": "Untuk Save Nomor",
                   "rowId": ".? tanpakategori"
                 }, {
                   "title": "|👨‍💻| Owner",
                   "description": "Menu Khusu Owner",
                   "rowId": ".? owner"
+                }, {
+              	"title": "|💳| Sewa Bot",
+                  "description": "Pembayaran Hanya Via Pulsa & Dana",
+                  "rowId": ".sewa"
+                }, {
+              	"title": "|☁️| Uptime",
+                  "description": "Waktu Runtime Bot",
+                  "rowId": ".runtime"
+                }, {
+              	"title": "|⚠️| Peraturan",
+                  "description": "Peraturan Bot Yang Harus Di Patuhi",
+                  "rowId": ".rules"
+                }, {
+              	"title": "|🖱️| Developer",
+                  "description": "Pemilik Bot",
+                  "rowId": ".owner"
                 }
               ]
             }
