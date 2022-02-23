@@ -8,7 +8,7 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┏━━「 ${namabot} 」━❖
+┏━━「 ${namabot} 」─⬣
 ┃◕‣ Hai, %name!
 ┃
 ┃◕‣ Tersisa %limit Limit
@@ -28,12 +28,12 @@ const defaultMenu = {
 ┃◕‣ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
 ┃
 ┃◕‣ Website store : https://bit.ly/3H3gy2z
-┗━━━━━━━━━━━❖`.trimStart(),
+┗━━━━━━━━━⬣`.trimStart(),
   header: '┏━━「 %category 」',
-  body: '┃◕‣%cmd %islimit %isPremium',
-  footer: '┗━━━━❖\n',
+  body: '┃◕‣ %cmd %islimit %isPremium',
+  footer: '┗━━━━⬡\n',
   after: `
-*%npmname@^%version*
+*%npmname Versi %version*
 ${'```%npmdesc```'}
 `,
 }
@@ -235,7 +235,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `【 ${ucapan()}  : ${week} ${weton} : ${date} 】`,
+            "title": `◕‣ ${ucapan()}  : ${week} ${weton} : ${date} `,
               "rows": [
                 {
                   "title": `[🧾] Semua Perintah`,
@@ -290,7 +290,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Menu Admin Group",
                   "rowId": ".? admin"
                 }, {
-                  "title": [|🏢] Grup",
+                  "title": "[🏢] Grup",
                   "description": "Menu Group",
                   "rowId": ".? grup"
                 }, {
@@ -298,7 +298,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Menu Untuk Premium",
                   "rowId": ".? premium"
                 }, {
-                  "title": "[🖥️] Internet",
+                  "title": "[🖥️] nternet",
                   "description": "Cari Sesuatu Di Bot",
                   "rowId": ".? internet"
                 }, {
