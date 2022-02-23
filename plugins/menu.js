@@ -8,30 +8,30 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┌──〔 ${namabot} 〕─⬣
-│⬡ Hai, %name!
-│
-│⬡ Tersisa %limit Limit
-│⬡ Role %role
-│⬡ Level %level (%exp / %maxexp)
-│⬡ [%xp4levelup]
-│⬡ %totalexp XP secara Total
-│ 
-│⬡ Hari : %week %weton
-│⬡ Tanggal : %date
-│⬡ Tanggal Islam : 
-│⬡ %dateIslamic
-│⬡ Waktu: %time
-│
-│⬡ Uptime: %uptime (%muptime)
-│⬡ Database: %rtotalreg dari %totalreg
-│⬡ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-│
-│⬡ Website store : https://bit.ly/3H3gy2z
-└────────⬣`.trimStart(),
-  header: '┌──〔 %category 〕',
-  body: '├%cmd %islimit %isPremium',
-  footer: '└────⬡\n',
+┏━━「 ${namabot} 」━❖
+┃◕‣ Hai, %name!
+┃
+┃◕‣ Tersisa %limit Limit
+┃◕‣ Role %role
+┃◕‣ Level %level (%exp / %maxexp)
+┃◕‣ [%xp4levelup]
+┃◕‣ %totalexp XP secara Total
+┃ 
+┃◕‣ Hari : %week %weton
+┃◕‣ Tanggal : %date
+┃◕‣ Tanggal Islam : 
+┃◕‣ %dateIslamic
+┃◕‣ Waktu: %time
+┃
+┃◕‣ Uptime: %uptime (%muptime)
+┃◕‣ Database: %rtotalreg dari %totalreg
+┃◕‣ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+┃
+┃◕‣ Website store : https://bit.ly/3H3gy2z
+┗━━━━━━━━━━━❖`.trimStart(),
+  header: '┏━━「 %category 」',
+  body: '┃◕‣%cmd %islimit %isPremium',
+  footer: '┗━━━━❖\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -238,135 +238,135 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
             "title": `【 ${ucapan()}  : ${week} ${weton} : ${date} 】`,
               "rows": [
                 {
-                  "title": `|🧾| Semua Perintah`,
+                  "title": `[🧾] Semua Perintah`,
                   "description": "Memberikan Semua Fitur Bot",
                   "rowId": ".? all"
                 }, {
-                  "title": "|🕋| Islam",
+                  "title": "[🕋] Islam",
                   "description": "Menu Tentang Islam",
                   "rowId": ".? quran"
                 }, {
-                  "title": "|🏫| Edukasi",
+                  "title": "[🏫] Edukasi",
                   "description": "Menu Edukasi",
                   "rowId": ".? edukasi"
                 }, {
-                  "title": "|📰| News",
+                  "title": "[📰] News",
                   "description": "Menu Berita",
                   "rowId": ".? News"
                 },  {
-                  "title": "|🎮| Game",
+                  "title": "[🎮] Game",
                   "description": "Menu Game",
                   "rowId": ".? game"
                 }, {
-                  "title": "|🗺️| Epic Rpg",
+                  "title": "[🗺️] Epic Rpg",
                   "description": "Menu Game RPG",
                   "rowId": ".? rpg"
                 }, {
-                  "title": "|📈| XP",
+                  "title": "[📈] XP",
                   "description": "XP Dan Level",
                   "rowId": ".? xp"
                 },  {
-                  "title": "|🔞| NSFW",
+                  "title": "[🔞] NSFW",
                   "description": "Menu Dewasa",
                   "rowId": ".? nsfw"
                 }, {
-                  "title": "|🖼️| Random Image",
+                  "title": "[🖼️] Random Image",
                   "description": "Menu Foto Random",
                   "rowId": ".? image"
                 }, {
-                  "title": "|🎇| Stiker",
+                  "title": "[🎇] Stiker",
                   "description": "Menu Buat Stiker",
                   "rowId": ".? stiker"
                 }, {
-                  "title": "|🐚| Kerang Ajaib",
+                  "title": "[🐚] Kerang Ajaib",
                   "description": "Menurut Kerang ajaib....",
                   "rowId": ".? kerangajaib"
                 }, {
-                  "title": "|📑| Quotes",
+                  "title": "[📑] Quotes",
                   "description": "Menu Quotes",
                   "rowId": ".? quotes"
                 }, {
-                  "title": "|🏛️| Admin",
+                  "title": "[🏛️] Admin",
                   "description": "Menu Admin Group",
                   "rowId": ".? admin"
                 }, {
-                  "title": "|🏢| Grup",
+                  "title": [|🏢] Grup",
                   "description": "Menu Group",
                   "rowId": ".? grup"
                 }, {
-                  "title": "|🔝| Premium",
+                  "title": "[🔝] Premium",
                   "description": "Menu Untuk Premium",
                   "rowId": ".? premium"
                 }, {
-                  "title": "|🖥️| Internet",
+                  "title": "[🖥️] Internet",
                   "description": "Cari Sesuatu Di Bot",
                   "rowId": ".? internet"
                 }, {
-                  "title": "|🥷| Anonymous",
+                  "title": "[🥷] Anonymous",
                   "description": "Mainkan Anonymous Chat",
                   "rowId": ".? anonymous"
                 }, {
-                  "title": "|✒️| Nulis & Logo",
+                  "title": "[✒️] Nulis & Logo",
                   "description": "Menu Nulis & Logo",
                   "rowId": ".? nulis"
                 }, {
-                  "title": "|📺| Downloader",
+                  "title": "[📺] Downloader",
                   "description": "Download Sesuatu Di Bot",
                   "rowId": ".? downloader"
                 }, {
-                  "title": "|🔧| Tools",
+                  "title": "[🔧] Tools",
                   "description": "Tools Yang Bisa di Gunakan Di Bot",
                   "rowId": ".? tools"
                 }, {
-                  "title": "|🎇| Fun",
+                  "title": "[🎇] Fun",
                   "description": "Menu Ceria",
                   "rowId": ".? fun"
                 }, {
-                  "title": "|📂| Database",
+                  "title": "[📂] Database",
                   "description": "Simpan Sesuatu Di Bot",
                   "rowId": ".? database"
                 }, {
-                  "title": "|📝| Vote & Absen",
+                  "title": "[📝] Vote & Absen",
                   "description": "Menu Vote & Absen",
                   "rowId": ".? vote"
                 }, {
-                  "title": "|🎙️| Pengubah Suara",
+                  "title": "[🎙️] Pengubah Suara",
                   "description": "Ubah Suaramu",
                   "rowId": ".? audio"
                 }, {
-                  "title": "|🤖| Jadi Bot",
+                  "title": "[🤖] Jadi Bot",
                   "description": "Menjadi Bot Sementara",
                   "rowId": ".? jadibot"
                 }, {
-                  "title": "|⛩️| Anime",
+                  "title": "[⛩️] Anime",
                   "description": "Cari Anime Di Bot",
                   "rowId": ".? anime"
                 }, {
-                  "title": "|ℹ️| Info",
+                  "title": "[ℹ️] Info",
                   "description": "Info Tentang Bot",
                   "rowId": ".? info"
                 }, {
-                  "title": "|◻️| Tanpa Kategori",
+                  "title": "[◻️] Tanpa Kategori",
                   "description": "Untuk Save Nomor",
                   "rowId": ".? tanpakategori"
                 }, {
-                  "title": "|👨‍💻| Owner",
+                  "title": "[👨‍💻] Owner",
                   "description": "Menu Khusu Owner",
                   "rowId": ".? owner"
                 }, {
-              	"title": "|💳| Sewa Bot",
+              	"title": "[💳] Sewa Bot",
                   "description": "Pembayaran Hanya Via Pulsa & Dana",
                   "rowId": ".sewa"
                 }, {
-              	"title": "|☁️| Uptime",
+              	"title": "[☁️] Uptime",
                   "description": "Waktu Runtime Bot",
                   "rowId": ".runtime"
                 }, {
-              	"title": "|⚠️| Peraturan",
+              	"title": "[⚠️] Peraturan",
                   "description": "Peraturan Bot Yang Harus Di Patuhi",
                   "rowId": ".rules"
                 }, {
-              	"title": "|🖱️| Developer",
+              	"title": "[🖱️] Developer",
                   "description": "Pemilik Bot",
                   "rowId": ".owner"
                 }
