@@ -8,32 +8,32 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┏━━「 ${namabot} 」━‣
-┃• Hai, %name!
-┃
-┃• Tersisa %limit Limit
-┃• Role %role
-┃• Level %level (%exp / %maxexp)
-┃• [%xp4levelup]
-┃• %totalexp XP secara Total
-┃ 
-┃• Hari : %week %weton
-┃• Tanggal : %date
-┃• Tanggal Islam : 
-┃• %dateIslamic
-┃• Waktu: %time
-┃
-┃• Uptime: %uptime (%muptime)
-┃• Database: %rtotalreg dari %totalreg
-┃• Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-┃
-┃• Website store : https://bit.ly/3H3gy2z
-┗━━━━━━━━━‣`.trimStart(),
-  header: '┏━━「 %category 」',
-  body: '┃▸ %cmd %islimit %isPremium',
-  footer: '┗━━━━\n',
+┌──「 ${namabot} 」─⬣
+│• Hai, %name!
+│
+│• Tersisa %limit Limit
+│• Role %role
+│• Level %level (%exp / %maxexp)
+│• [%xp4levelup]
+│• %totalexp XP secara Total
+│ 
+│• Hari : %week %weton
+│• Tanggal : %date
+│• Tanggal Islam : 
+│• %dateIslamic
+│• Waktu: %time
+│
+│• Uptime: %uptime (%muptime)
+│• Database: %rtotalreg dari %totalreg
+│• Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+│
+│• Website store : https://bit.ly/3H3gy2z
+└────────────⬣`.trimStart(),
+  header: '┌──「 %category 」',
+  body: '├%cmd %islimit %isPremium',
+  footer: '└────⬡\n',
   after: `
-*%npmname Versi %version*
+*%npmname@^%version*
 ${'```%npmdesc```'}
 `,
 }
@@ -235,7 +235,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           "listType": "SINGLE_SELECT",
           "sections": [
             {
-            "title": `◕‣ ${ucapan()}  : ${week} ${weton} : ${date} `,
+            "title": `◕‣ ${ucapan()}  : ${week} ${weton} : ${date}`,
               "rows": [
                 {
                   "title": `[🧾] Semua Perintah`,
@@ -298,7 +298,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                   "description": "Menu Untuk Premium",
                   "rowId": ".? premium"
                 }, {
-                  "title": "[🖥️] nternet",
+                  "title": "[🖥️] Internet",
                   "description": "Cari Sesuatu Di Bot",
                   "rowId": ".? internet"
                 }, {
