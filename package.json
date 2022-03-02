@@ -1,6 +1,6 @@
 {
   "name": "ʙᴏᴛᴄᴀʜx",
-  "version": "1.5.0",
+  "version": "0.1.1",
   "description": "ꜱɪᴍᴩᴇʟ ᴡʜᴀᴛꜱᴀᴩᴩ ʙᴏᴛ",
   "depecrated": false,
   "main": "index.js",
@@ -19,16 +19,16 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/BOTCAHX/BOTCAHXtm",
+  "homepage": "https://github.com/BOTCAHX/BOTCAHX-SC",
   "author": {
     "name": "Tio Permana"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BOTCAHX/BOTCAHXtm.git"
+    "url": "git+https://github.com/BOTCAHX/BOTCAHX-SC.git"
   },
   "bugs": {
-    "url": "https://github.com/BOTCAHX/BOTCAHXtm/issues"
+    "url": "https://github.com/BOTCAHX/BOTCAHX-SC/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
