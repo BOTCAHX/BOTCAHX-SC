@@ -3,11 +3,11 @@ let handler = async (m, { conn, args }) => {
    response = args.join(' ').split('|')
   if (!args[0]) throw 'Masukkan Text\nContoh : .flaming7 BOTCAHX'
   m.reply('_Proses..._')
-  let res = `https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text='${response[0]}`
+  let res = `https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=${response[0]}`
   conn.sendFile(m.chat, res, 'gura.jpg', `© BOTCAHX`, m, false)
 }
-handler.help = ['flaming6'].map(v => v + ' <text>')
+handler.help = ['flaming7'].map(v => v + ' <text>')
 handler.tags = ['nulis']
-handler.command = /^(flaming6)$/i
+handler.command = /^(flaming7)$/i
 
 module.exports = handler
