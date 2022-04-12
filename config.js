@@ -6,10 +6,11 @@ global.owner = ['6282221792667','6282320830684'] // Put your number here //owner
 global.kontak = ['6282221792667','6282320830684'] //Ketika ada yang ngetik #owner
 global.mods = ['0'] // Want some help?
 global.prems = ['6282221792667','6282320830684'] // Premium user has unlimited limit
+
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com', 
-  rey: 'https://server-api-rey.herokuapp.com',
+  rey: 'https://sekha.me',
   xteam: 'https://api.xteam.xyz',
   nzcha: 'http://nzcha-apii.herokuapp.com',
   bg: 'http://bochil.ddns.net',
@@ -17,20 +18,22 @@ global.APIs = { // API Prefix
   dzx: 'https://api.dhamzxploit.my.id',
   zahir: 'https://zahirr-web.herokuapp.com',
   lol: 'https://api.lolhuman.xyz',
-  dhnjing: 'https://dhnjing.xyz',
+  dhnjing: 'https://dhn-api.herokuapp.com',
   zeks: 'https://api.zeks.me',
-  pencarikode: 'https://pencarikode.xyz',
+  pencarikode: 'https://api.chipa.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
 }
+
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey' (apikey kalian)
   'https://api.xteam.xyz': 'd90a9e986e18778b',
-  'https://server-api-rey.herokuapp.com': 'apirey',
+  'https://sekha.me': 'apirey',
+  'https://dhn-api.herokuapp.com': 'APIKEY',
   'https://api.xteam.xyz': 'cristian9407',
   'https://api.lolhuman.xyz': 'RFK-Rey',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
-  'https://pencarikode.xyz': 'pais',
+  'https://api.chipa.xyz': 'pais',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
