@@ -9,6 +9,7 @@ global.prems = ['6282221792667','6282320830684'] // Premium user has unlimited l
 
 global.APIs = { // API Prefix
   // name: 'https://website'
+  neoxr: 'https://api.neoxr.my.id',
   nrtm: 'https://nurutomo.herokuapp.com', 
   rey: 'https://sekha.me',
   xteam: 'https://api.xteam.xyz',
@@ -26,6 +27,7 @@ global.APIs = { // API Prefix
 
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey' (apikey kalian)
+  'https://api.neoxr.my.id': 'yourkey',
   'https://api.xteam.xyz': 'd90a9e986e18778b',
   'https://sekha.me': 'apirey',
   'https://dhn-api.herokuapp.com': 'APIKEY',
