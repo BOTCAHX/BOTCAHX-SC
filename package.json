@@ -55,7 +55,7 @@
     "minecraft-server-util": "^3.5.3",
     "fluent-ffmpeg": "^2.1.1",
     "emoji-api": "^2.0.0",
-    "nekos.life": "^2.0.6",
+    "nekos.life": "^3.0.0",
     "node-fetch": "^3.2.6",
     "node-gtts": "^2.0.2",
     "node-webpmux": "^3.1.0",
