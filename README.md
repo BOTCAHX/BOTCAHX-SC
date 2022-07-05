@@ -10,3 +10,4 @@ Heroku Buildpack
 
 Ini adalah sc andalan gua sewaktu nge bot, namun sekarang gua pensi dari bot maka dari itu kalian sekarang bebas menggunakan sc ini
 
+https://6070-cs-522702747685-default.cs-asia-southeast1-yelo.cloudshell.dev/?authuser=0&redirectedPreviously=true
