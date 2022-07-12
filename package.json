@@ -52,7 +52,7 @@
     "moment-timezone": "^0.5.32",
     "spinnies": "^0.5.0",
     "image-to-base64": "^2.1.1",
-    "minecraft-server-util": "^5.2.9",
+    "minecraft-server-util": "5.3.0",
     "fluent-ffmpeg": "^2.1.1",
     "emoji-api": "^2.0.0",
     "nekos.life": "^3.0.0",
