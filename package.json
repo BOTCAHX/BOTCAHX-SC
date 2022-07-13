@@ -56,7 +56,7 @@
     "fluent-ffmpeg": "^2.1.1",
     "emoji-api": "^2.0.0",
     "nekos.life": "^3.0.0",
-    "node-fetch": "^3.2.6",
+    "node-fetch": "3.2.8",
     "node-gtts": "^2.0.2",
     "node-webpmux": "^3.1.0",
     "qrcode": "^1.4.4",
